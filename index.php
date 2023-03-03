@@ -22,7 +22,7 @@ $user = checkLogin();
         <?php require "template/header.php" ?>
     </div>
 
-    <div class="container-fluid text-center" id="main"></br>
+    <div class="container-fluid" id="main"></br>
         <?php if (!isset($_GET['page'])) : ?>
             <h3 class="text-center"> <?php echo "Registro Universitario"; ?>
                 <div class="row">

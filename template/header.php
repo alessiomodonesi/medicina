@@ -11,8 +11,8 @@
                         Attività didattiche
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="?page=1">Content</a></li>
-                        <li><a class="dropdown-item" href="?page=2">Editor</a></li>
+                        <li><a class="dropdown-item" href="?page=1">Archivio</a></li>
+                        <li><a class="dropdown-item" href="?page=2">Modifica</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -20,8 +20,8 @@
                         Unità formative
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="?page=3">Content</a></li>
-                        <li><a class="dropdown-item" href="?page=4">Editor</a></li>
+                        <li><a class="dropdown-item" href="?page=3">Archivio</a></li>
+                        <li><a class="dropdown-item" href="?page=4">Modifica</a></li>
                     </ul>
                 </li>
             </ul>

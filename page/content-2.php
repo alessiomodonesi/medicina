@@ -1,1 +1,1 @@
-<h3 class="text-center"><?php echo "Editor Attività Didattiche"; ?>
+<h3 class="text-center"><?php echo "Modifica Attività"; ?>
