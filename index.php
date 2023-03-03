@@ -1,5 +1,5 @@
 <?php
-include_once dirname(__FILE__) . '/function/checkLogin.php';
+include_once dirname(__FILE__) . '/function/login/checkLogin.php';
 session_start();
 $user = checkLogin();
 ?>
@@ -27,7 +27,7 @@ $user = checkLogin();
             <h3 class="text-center"> <?php echo "Registro Universitario"; ?>
                 <div class="row">
                     <div class="col-12">
-                        <a class="btn btn-outline-dark logout-btn" href="function/logout.php" role="button">Logout</a>
+                        <a class="btn btn-outline-dark logout-btn" href="function/login/logout.php" role="button">Logout</a>
                     </div>
                 </div>
             <?php endif; ?>

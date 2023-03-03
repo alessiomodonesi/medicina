@@ -3,15 +3,15 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-include_once dirname(__FILE__) . 'connect.php';
-include_once dirname(__FILE__) . 'model.php';
+include_once dirname(__FILE__) . '/../connect.php';
+include_once dirname(__FILE__) . '/../model.php';
 
 $database = new Database();
 $db = $database->connect();
 
 $activity = new Model($db);
 
-$stmt = $activity->getAttività();
+$stmt = $activity->getArchiveActivity();
 
 if ($stmt->num_rows > 0) {
     $activity_arr = array();
@@ -19,7 +19,7 @@ if ($stmt->num_rows > 0) {
         extract($record);
         $activity_record = array(
             'codice' => $codice,
-            'nome' => $nome,
+            'nome' => $nome
         );
         array_push($activity_arr, $activity_record);
     }

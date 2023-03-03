@@ -1,5 +1,5 @@
 <?php
-include_once dirname(__FILE__) . '/../function/login.php';
+include_once dirname(__FILE__) . '/../function/login/login.php';
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

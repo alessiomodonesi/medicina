@@ -9,28 +9,45 @@ class Model
         $this->conn = $db;
     }
 
-    function getAttività()
+    function getArchiveActivity()
     {
-        $query = "SELECT p1.nome, p2.nome FROM piano_di_studi p1
-                    INNER JOIN formativa_didattica fd ON p1.codice = fd.formativa
-                    INNER JOIN piano_di_studi p2 ON p2.codice = fd.didattica
-                    WHERE 1=1;
+        $query = "SELECT DISTINCT p.codice, p.nome FROM piano_di_studi p
+                    INNER JOIN formativa_didattica fd ON p.codice = fd.formativa;
                 ";
 
         $stmt = $this->conn->query($query);
         return $stmt;
     }
 
-    function getUnitàByAttività($codice)
+    function getArchiveUnity()
     {
-        $query = "SELECT p1.nome, p2.nome FROM piano_di_studi p1
-                    INNER JOIN formativa_didattica fd ON p1.codice = fd.formativa
-                    INNER JOIN piano_di_studi p2 ON p2.codice = fd.didattica
-                    WHERE p1.codice = $codice;
+        $query = "SELECT DISTINCT p.codice, p.nome FROM piano_di_studi p
+                    INNER JOIN formativa_didattica fd ON p.codice = fd.didattica;
                 ";
 
         $stmt = $this->conn->query($query);
+        return $stmt;
+    }
 
+    function getActivity($codice)
+    {
+        $query = "SELECT DISTINCT p.codice, p.nome FROM piano_di_studi p
+                    INNER JOIN formativa_didattica fd ON p.codice = fd.formativa
+                    WHERE p.codice = '" . $codice . "';
+                ";
+
+        $stmt = $this->conn->query($query);
+        return $stmt;
+    }
+
+    function getUnity($codice)
+    {
+        $query = "SELECT DISTINCT p.codice, p.nome FROM piano_di_studi p
+                    INNER JOIN formativa_didattica fd ON p.codice = fd.didattica
+                    WHERE p.codice = '" . $codice . "';
+                ";
+
+        $stmt = $this->conn->query($query);
         return $stmt;
     }
 }
