@@ -1,0 +1,364 @@
+codice,nome,CFU,settore,n_settore,TAF_Ambito,ore_lezione,ore_laboratorio,ore_tirocinio,tipo_insegnamento,semestre,descrizione_semestre,anno1,anno2
+500402,METODOLOGIA MEDICO SCIENTIFICA,8,,,,64,,,Obbligatorio,2,Secondo Semestre,2,
+500000,PROVA FINALE,18,PROFIN_S,,Lingua/Prova Finale / Per la prova finale,144,,,Obbligatorio,2,Secondo Semestre,6,
+500026,STATISTICA,5,MED,01,"Caratterizzante / Inglese scientifico e
+abilità linguistiche, informatiche e relazionali, pedagogia medica,
+tecnologie avanzate e a distanza di informazione e comunicazione",40,,,Obbligatorio,0,,2,
+500124,ECONOMIA AZIENDALE,1,SECS-P,07,"Caratterizzante / Scienze umane, politiche
+della salute e management sanitario",8,,,Obbligatorio,0,,2,
+500130,CHIMICA,4,BIO,10,"Base / Struttura, funzione e metabolismo
+delle molecole d’interesse biologico",32,,,Obbligatorio,1,Primo Semestre,1,
+500131,PROPEDEUTICA BIOCHIMICA,3,BIO,10,"Base / Struttura, funzione e metabolismo
+delle molecole d’interesse biologico",24,,,Obbligatorio,1,Primo Semestre,1,
+500134,BIOLOGIA GENERALE,4,BIO,13,"Base / Discipline generali per la
+formazione del medico",32,,,Obbligatorio,1,Primo Semestre,1,
+500136,GENETICA UMANA,3,MED,03,"Base / Discipline generali per la
+formazione del medico",24,,,Obbligatorio,1,Primo Semestre,2,
+500161,ANATOMIA UMANA,20,,,,160,,,Obbligatorio,3,Primo e Secondo Semestre,1,
+500162,ISTOLOGIA,4,BIO,17,Base / Morfologia umana,32,,,Obbligatorio,0,,1,
+500191,BIOCHIMICA,18,,,,144,,,Obbligatorio,3,Primo e Secondo Semestre,1,
+500195,GENETICA MEDICA,1,MED,03,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",8,,,Obbligatorio,0,,6,
+500198,FARMACOLOGIA,1,BIO,14,"Caratterizzante / Farmacologia,
+tossicologia e principi di terapia medica",8,,,Obbligatorio,0,,5,
+500210,BIOETICA,2,MED,02,"Caratterizzante / Scienze umane, politiche
+della salute e management sanitario",16,,,Obbligatorio,0,,6,
+500312,FISIOLOGIA UMANA,20,,,,160,,,Obbligatorio,3,Primo e Secondo Semestre,2,
+500431,ELEMENTI DI BIOCHIMICA,7,BIO,10,"Base / Struttura, funzione e metabolismo
+delle molecole d’interesse biologico",56,,,Obbligatorio,2,Secondo Semestre,1,
+500434,BIOCHIMICA CELLULARE,2,BIO,10,"Base / Struttura, funzione e metabolismo
+delle molecole d’interesse biologico",16,,,Obbligatorio,2,Secondo Semestre,1,
+500435,ISTOLOGIA E EMBRIOLOGIA,9,,,,72,,,Obbligatorio,2,Secondo Semestre,1,
+500436,ANATOMIA 1,9,BIO,16,"Affine/Integrativa / Attività formative
+affini o integrative",72,,,Obbligatorio,1,Primo Semestre,1,
+500738,STORIA MEDICINA,2,MED,02,"Caratterizzante / Inglese scientifico e
+abilità linguistiche, informatiche e relazionali, pedagogia medica,
+tecnologie avanzate e a distanza di informazione e comunicazione",16,,,Obbligatorio,0,,2,
+500757,IGIENE AMBIENTALE,1,MED,42,"Caratterizzante / Fisiopatologia,
+metodologia clinica, propedeutica clinica e sistematica medico-chirurgica",8,,,Obbligatorio,0,,6,
+500763,EMBRIOLOGIA,3,BIO,17,Base / Morfologia umana,24,,,Obbligatorio,0,,1,
+500764,CITOLOGIA,2,BIO,17,Base / Morfologia umana,16,,,Obbligatorio,0,,1,
+501317,MICROBIOLOGIA,9,,,,12,64,,Obbligatorio,2,Secondo Semestre,3,
+501322,TOSSICOLOGIA,1,BIO,14,"Caratterizzante / Fisiopatologia,
+metodologia clinica, propedeutica clinica e sistematica medico-chirurgica",8,,,Obbligatorio,0,,5,
+501346,FARMACOCINETICA,1,BIO,14,"Caratterizzante / Farmacologia,
+tossicologia e principi di terapia medica",8,,,Obbligatorio,0,,3,
+501356,FARMACOLOGIA APPLICATA,1,BIO,14,"Caratterizzante / Farmacologia,
+tossicologia e principi di terapia medica",8,,,Obbligatorio,0,,5,
+501494,CHIRURGIA GENERALE,3,MED,18,"Caratterizzante / Fisiopatologia,
+metodologia clinica, propedeutica clinica e sistematica medico-chirurgica",16,12,,Obbligatorio,2,Secondo Semestre,3,
+501495,DERMATOLOGIA,2,MED,35,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",16,,,Obbligatorio,0,,4,
+501497,MEDICINA LEGALE,4,MED,43,"Caratterizzante / Medicina e sanità
+pubblica e degli ambienti di lavoro e scienze medico legali",32,,,Obbligatorio,0,,6,
+501498,NEUROLOGIA,5,MED,26,Caratterizzante / Discipline neurologiche,40,,,Obbligatorio,0,,5,
+501593,NEUROSCIENZE,1,BIO,09,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,1,2
+501624,MALATTIE INFETTIVE,5,MED,17,Caratterizzante / Medicina di comunità,40,,,Obbligatorio,1,Primo Semestre,5,
+501627,ENDOCRINOLOGIA,3,MED,13,"Caratterizzante / Fisiopatologia,
+metodologia clinica, propedeutica clinica e sistematica medico-chirurgica",24,,,Obbligatorio,0,,3,
+501628,GINECOLOGIA E OSTETRICIA,6,,,,48,,,Obbligatorio,1,Primo Semestre,6,
+501630,NEFROLOGIA,4,MED,14,"Caratterizzante / Formazione clinica
+interdisciplinare e medicina basata sulle evidenze",32,,,Obbligatorio,0,,4,
+501631,GASTROENTEROLOGIA,3,MED,12,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",24,,,Obbligatorio,0,,4,
+501634,ONCOLOGIA MEDICA,2,MED,06,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",16,,,Obbligatorio,0,,4,
+501636,ORTOPEDIA,2,MED,33,"Caratterizzante / Clinica medico-chirurgica
+dell’apparato locomotore",16,,,Obbligatorio,0,,4,
+501657,MEDICINA DELLO SPORT,2,BIO,09,"A scelta dello studente / A scelta dello
+studente",16,,,,1,Primo Semestre,1,2
+501667,"MALATTIE DELL’APPARATO
+LOCOMOTORE",4,,,,32,,,Obbligatorio,2,,4,
+501670,FARMACOLOGIA GENERALE,2,BIO,14,"Caratterizzante / Farmacologia,
+tossicologia e principi di terapia medica",16,,,Obbligatorio,0,,3,
+501680,ANATOMIA 2,11,BIO,16,Base / Morfologia umana,88,,,Obbligatorio,2,Secondo Semestre,1,
+501682,FISIOLOGIA RESPIRATORIA,3,BIO,09,"Base / Funzioni biologiche integrate di
+organi, sistemi e apparati umani",24,,,Obbligatorio,2,Secondo Semestre,2,
+501683,NEUROFISIOLOGIA,3,BIO,09,"Base / Funzioni biologiche integrate di
+organi, sistemi e apparati umani",24,,,Obbligatorio,2,Secondo Semestre,2,
+501684,FISIOLOGIA RENE,2,BIO,09,"Base / Funzioni biologiche integrate di
+organi, sistemi e apparati umani",16,,,Obbligatorio,1,Primo Semestre,2,
+501685,FISIOLOGIA GASTROENTEROLOGICA,2,BIO,09,"Base / Funzioni biologiche integrate di
+organi, sistemi e apparati umani",16,,,Obbligatorio,1,Primo Semestre,2,
+501687,IMMUNOLOGIA,5,MED,04,"Caratterizzante / Patologia generale e
+molecolare, immunopatologia, fisiopatologia generale, microbiologia e
+parassitologia",32,12,,Obbligatorio,2,Secondo Semestre,2,
+501690,FARMACOLOGIA 1,5,,,,40,,,Obbligatorio,1,Primo Semestre,3,
+501692,IGIENE E MEDICINA DI COMUNITA’,3,MED,42,"Caratterizzante / Fisiopatologia,
+metodologia clinica, propedeutica clinica e sistematica medico-chirurgica",24,,,Obbligatorio,0,,2,
+501694,FARMACOLOGIA 2,5,,,,40,,,Obbligatorio,2,Secondo Semestre,5,
+501695,ANATOMIA PATOLOGICA,8,MED,08,"Caratterizzante / Discipline
+anatomo-patologiche e correlazioni anatomo-cliniche",64,,,Obbligatorio,2,Secondo Semestre,4,
+501699,MICROBIOLOGIA CLINICA,2,MED,07,"Caratterizzante / Medicina di laboratorio e
+diagnostica integrata",16,,,Obbligatorio,0,,3,
+501746,PSICHIATRIA,5,,,,40,,,Obbligatorio,1,Primo Semestre,5,
+501747,NEUROCHIRURGIA,1,MED,27,Caratterizzante / Discipline neurologiche,8,,,Obbligatorio,0,,5,
+501753,CHIRURGIA MAXILLO FACCIALE,1,MED,29,"Affine/Integrativa / Attività formative
+affini o integrative",8,,,Obbligatorio,0,,5,
+501754,OTORINOLARINGOIATRIA,2,MED,31,"Caratterizzante / Clinica medico-chirurgica
+degli organi di senso",16,,,Obbligatorio,0,,5,
+501763,PEDIATRIA,7,,,,56,,,Obbligatorio,2,Secondo Semestre,5,
+501768,FISIOLOGIA DEL MUSCOLO,2,BIO,09,"Base / Funzioni biologiche integrate di
+organi, sistemi e apparati umani",16,,,Obbligatorio,1,Primo Semestre,2,
+501769,FISIOLOGIA CARDIOCIRCOLATORIA,3,BIO,09,"Base / Funzioni biologiche integrate di
+organi, sistemi e apparati umani",24,,,Obbligatorio,2,Secondo Semestre,2,
+501770,FISIOLOGIA ENDOCRINOLOGICA,2,BIO,09,"Base / Funzioni biologiche integrate di
+organi, sistemi e apparati umani",16,,,Obbligatorio,2,Secondo Semestre,2,
+501771,SEMEIOTICA MEDICA E CHIRURGICA,7,,,,40,24,,Obbligatorio,3,Primo e Secondo Semestre,3,
+501772,SEMEIOTICA MEDICA,3,MED,09,"Caratterizzante / Medicina delle attività
+motorie e del benessere",16,12,,Obbligatorio,1,Primo Semestre,3,
+501773,MEDICINA DI LABORATORIO,5,BIO,12,"Caratterizzante / Medicina di laboratorio e
+diagnostica integrata",24,24,,Obbligatorio,2,Secondo Semestre,3,
+501777,SEMEIOTICA STRUMENTALE,1,MED,36,"Caratterizzante / Medicina di laboratorio e
+diagnostica integrata",8,,,Obbligatorio,1,Primo Semestre,3,
+501778,"MALATTIE DEL SISTEMA
+IMMUNITARIO E REUMATOLOGIA",4,,,,32,,,Obbligatorio,2,Secondo Semestre,4,
+501779,REUMATOLOGIA,3,MED,16,"Caratterizzante / Formazione clinica
+interdisciplinare e medicina basata sulle evidenze",24,,,Obbligatorio,0,,4,
+501780,IMMUNOLOGIA CLINICA,1,MED,09,"Caratterizzante / Formazione clinica
+interdisciplinare e medicina basata sulle evidenze",8,,,Obbligatorio,0,,4,
+501781,MALATTIE SANGUE,5,,,,40,,,Obbligatorio,2,Secondo Semestre,3,
+501782,EMATOLOGIA,3,MED,15,"Caratterizzante / Formazione clinica
+interdisciplinare e medicina basata sulle evidenze",24,,,Obbligatorio,0,,3,
+501783,ONCOLOGIA EMATOLOGICA,1,MED,15,"Caratterizzante / Formazione clinica
+interdisciplinare e medicina basata sulle evidenze",8,,,Obbligatorio,0,,3,
+501784,MALATTIE CARDIOVASCOLARI,6,,,,48,,,Obbligatorio,1,Primo Semestre,4,
+501785,CARDIOLOGIA,4,MED,11,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",32,,,Obbligatorio,0,,4,
+501786,CHIRURGIA CARDIACA,1,MED,23,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",8,,,Obbligatorio,0,,4,
+501787,CHIRURGIA VASCOLARE,1,MED,22,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",8,,,Obbligatorio,0,,4,
+501788,MALATTIE APPARATO RESPIRATORIO,5,,,,40,,,Obbligatorio,1,Primo Semestre,4,
+501789,CHIRURGIA TORACICA,1,MED,21,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",8,,,Obbligatorio,0,,4,
+501790,"MALATTIE DEL RENE E APPARATO
+URINARIO",5,,,,40,,,Obbligatorio,1,Primo Semestre,4,
+501791,UROLOGIA,1,MED,24,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",8,,,Obbligatorio,0,,4,
+501792,MEDICINA FISICA E RIABILITAZIONE,2,MED,34,"Caratterizzante / Clinica medico-chirurgica
+dell’apparato locomotore",16,,,Obbligatorio,0,,4,
+501793,"MALATTIE SISTEMA ENDOCRINO E
+METABOLISMO",5,,,,40,,,Obbligatorio,2,Secondo Semestre,3,
+501794,CHIRURGIA ENDOCRINA,1,MED,18,"Caratterizzante / Clinica generale medica e
+chirurgica",8,,,Obbligatorio,0,,3,
+501795,MALATTIE APPARATO DIGERENTE,6,,,,48,,,Obbligatorio,2,Secondo Semestre,4,
+501797,NUTRIZIONE UMANA,1,MED,49,"Caratterizzante / Formazione clinica
+interdisciplinare e medicina basata sulle evidenze",8,,,Obbligatorio,0,,4,
+501798,RADIOLOGIA,2,MED,36,"Caratterizzante / Discipline radiologiche e
+radioterapiche",16,,,Obbligatorio,0,,4,
+501799,RADIOTERAPIA,1,MED,36,"Caratterizzante / Discipline radiologiche e
+radioterapiche",8,,,Obbligatorio,0,,4,
+501800,NEURORADIOLOGIA,1,MED,37,"Caratterizzante / Discipline radiologiche e
+radioterapiche",8,,,Obbligatorio,0,,4,
+501802,"MALATTIE CUTANEE E CHIRURGIA
+PLASTICA",4,,,,32,,,Obbligatorio,2,Secondo Semestre,4,
+501803,CHIRURGIA PLASTICA E RICOSTRUTTIVA,2,MED,19,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",16,,,Obbligatorio,0,,4,
+501804,MALATTIE ORGANI DI SENSO,8,,,,64,,,Obbligatorio,1,Primo Semestre,5,
+501805,OFTALMOLOGIA,3,MED,30,"Caratterizzante / Clinica medico-chirurgica
+degli organi di senso",24,,,Obbligatorio,0,,5,
+501806,AUDIOLOGIA,1,MED,32,"Caratterizzante / Clinica medico-chirurgica
+degli organi di senso",8,,,Obbligatorio,0,,5,
+501807,ODONTOIATRIA,1,MED,28,"Caratterizzante / Clinica medico-chirurgica
+degli organi di senso",8,,,Obbligatorio,0,,5,
+501808,SCIENZE NEUROLOGICHE,6,,,,48,,,Obbligatorio,1,Primo Semestre,5,
+501809,PSICOLOGIA MEDICA,2,MED,25,"Caratterizzante / Clinica psichiatrica e
+discipline del comportamento",16,,,Obbligatorio,0,,5,
+501810,CHIRURGIA PEDIATRICA,1,MED,20,Caratterizzante / Discipline pediatriche,8,,,Obbligatorio,0,,5,
+501811,NEUROPSICHIATRIA INFANTILE,1,MED,39,Caratterizzante / Discipline pediatriche,8,,,Obbligatorio,0,,5,
+501813,MEDICINA URGENZA,2,MED,09,"Caratterizzante / Emergenze
+medico-chirurgiche",16,,,Obbligatorio,0,,6,
+501814,CHIRURGIA URGENZA,1,MED,18,"Caratterizzante / Emergenze
+medico-chirurgiche",8,,,Obbligatorio,0,,6,
+501815,TERAPIA INTENSIVA,2,MED,41,"Caratterizzante / Emergenze
+medico-chirurgiche",16,,,Obbligatorio,0,,6,
+501817,INGLESE 2,4,L-LIN,12,Altro / Ulteriori conoscenze linguistiche,32,,,Obbligatorio,3,Primo e Secondo Semestre,1,2
+501827,EPIDEMIOLOGIA,1,MED,42,"Caratterizzante / Scienze umane, politiche
+della salute e management sanitario",8,,,Obbligatorio,0,,2,
+501832,CLINICA MEDICA 1,5,,,,40,,,Obbligatorio,2,Secondo Semestre,5,
+501833,CLINICA MEDICA 2,8,,,,64,,,Obbligatorio,1,Primo Semestre,6,
+501834,GERIATRIA,2,MED,09,"Caratterizzante / Clinica generale medica e
+chirurgica",16,,,Obbligatorio,0,,5,
+501971,TIROCINIO MEDICINA INTERNA,1,MED,09,"Altro / Tirocini formativi e di
+orientamento",,,20,Obbligatorio,3,Primo e Secondo Semestre,5,
+501999,TIROCINIO NEUROLOGIA,2,MED,26,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,3,Primo e Secondo Semestre,5,
+502622,PATOLOGIA GENERALE,8,,,,48,24,,Obbligatorio,1,Primo Semestre,3,
+502623,FISIOPATOLOGIA GENERALE,1,MED,04,"Caratterizzante / Formazione clinica
+interdisciplinare e medicina basata sulle evidenze",8,,,Obbligatorio,0,,3,
+502625,FARMACODINAMICA,1,BIO,14,"Caratterizzante / Fisiopatologia,
+metodologia clinica, propedeutica clinica e sistematica medico-chirurgica",8,,,Obbligatorio,0,,3,
+502626,MONITORAGGIO FARMACOLOGICO,1,BIO,14,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",8,,,Obbligatorio,0,,3,
+502638,MEDICINA DEL LAVORO,3,MED,44,"Caratterizzante / Medicina e sanità
+pubblica e degli ambienti di lavoro e scienze medico legali",24,,,Obbligatorio,0,,6,
+502642,PEDIATRIA GENERALE,5,MED,38,Caratterizzante / Discipline pediatriche,40,,,Obbligatorio,0,,5,
+502645,MEDICINA INTERNA A,1,MED,09,"Caratterizzante / Clinica generale medica e
+chirurgica",8,,,Obbligatorio,0,,5,
+502646,MEDICINA INTERNA B,6,MED,09,"Caratterizzante / Clinica generale medica e
+chirurgica",48,,,Obbligatorio,0,,6,
+502650,VIROLOGIA,2,MED,07,"Caratterizzante / Patologia generale e
+molecolare, immunopatologia, fisiopatologia generale, microbiologia e
+parassitologia",16,,,Obbligatorio,0,,3,
+502653,CLINICA CHIRURGICA,6,MED,18,"Caratterizzante / Clinica generale medica e
+chirurgica",48,,,Obbligatorio,0,,6,
+502756,PSICHIATRIA GENERALE,3,MED,25,"Caratterizzante / Clinica psichiatrica e
+discipline del comportamento",24,,,Obbligatorio,0,,5,
+503343,FISIOLOGIA CELLULARE,3,BIO,09,"Base / Funzioni biologiche integrate di
+organi, sistemi e apparati umani",24,,,Obbligatorio,1,Primo Semestre,2,
+503360,ADE VI ANNO,4,NN,,"A scelta dello studente / A scelta dello
+studente",32,,,,2,Secondo Semestre,6,
+503488,MEDICINA PREVENTIVA,4,,,,32,,,Obbligatorio,1,Primo Semestre,2,
+503966,FARMACOLOGIA CLINICA,1,BIO,14,"Caratterizzante / Fisiopatologia,
+metodologia clinica, propedeutica clinica e sistematica medico-chirurgica",8,,,Obbligatorio,0,,5,
+504447,MEDICINA DEL TERRITORIO,2,MED,09,"Caratterizzante / Formazione clinica
+interdisciplinare e medicina basata sulle evidenze",16,,,Obbligatorio,0,,5,
+504451,MEDICINA PUBBLICA,11,,,,88,,,Obbligatorio,2,Secondo Semestre,6,
+504459,PATOLOGIA,7,MED,04,"Caratterizzante / Patologia generale e
+molecolare, immunopatologia, fisiopatologia generale, microbiologia e
+parassitologia",40,24,,Obbligatorio,0,,3,
+504861,CHEMIOTERAPIA,1,BIO,14,"Caratterizzante / Farmacologia,
+tossicologia e principi di terapia medica",8,,,Obbligatorio,0,,5,
+504863,ORGANIZZAZIONE SANITARIA,1,MED,42,"Caratterizzante / Scienze umane, politiche
+della salute e management sanitario",8,,,Obbligatorio,0,,6,
+504874,MICROBIOLOGIA GENERALE,4,MED,07,"Caratterizzante / Patologia generale e
+molecolare, immunopatologia, fisiopatologia generale, microbiologia e
+parassitologia",32,,,Obbligatorio,0,,3,
+506412,CHIRURGIA ED EMERGENZE,9,,,,72,,,Obbligatorio,1,Primo Semestre,6,
+506413,"DIAGNOSTICA PER IMMAGINI E
+ONCOLOGIA",6,,,,48,,,Obbligatorio,2,Secondo Semestre,4,
+506414,CHIRURGIA GASTROENTEROLOGICA,2,MED,18,"Caratterizzante / Clinica generale medica e
+chirurgica",16,,,Obbligatorio,0,,4,
+506416,FISICA MEDICA,5,FIS,07,"Base / Discipline generali per la
+formazione del medico",40,,,Obbligatorio,1,Primo Semestre,1,
+506417,GINECOLOGIA E OSTETRICIA – MODULO,5,MED,40,"Caratterizzante / Discipline
+ostetrico-ginecologiche, medicina della riproduzione e sessuologia medica",40,,,Obbligatorio,0,,6,
+506422,INGLESE 1,4,L-LIN,12,Altro / Ulteriori conoscenze linguistiche,32,,,,3,Primo e Secondo Semestre,1,2
+507237,TIROCINIO SEMEIOTICA MEDICA,6,MED,09,"Altro / Tirocini formativi e di
+orientamento",,,120,Obbligatorio,2,Secondo Semestre,3,
+507238,TIROCINIO SEMEIOTICA CHIRURGICA,6,MED,18,"Altro / Tirocini formativi e di
+orientamento",,,120,Obbligatorio,2,Secondo Semestre,3,
+507239,TIROCINIO IV ANNO,16,,,,,,320,Obbligatorio,3,Primo e Secondo Semestre,4,
+507240,TIROCINIO RADIOLOGIA,2,MED,36,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,2,Secondo Semestre,4,
+507241,TIROCINIO CARDIOLOGIA,2,MED,11,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,2,Secondo Semestre,4,
+507242,TIROCINIO GASTROENTEROLOGIA,2,MED,12,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,2,Secondo Semestre,4,
+507243,TIROCINIO NEFROLOGIA,2,MED,14,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,2,Secondo Semestre,4,
+507244,TIROCINIO REUMATOLOGIA,2,MED,16,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,2,Secondo Semestre,4,
+507245,TIROCINIO ORTOPEDIA,1,MED,33,"Altro / Tirocini formativi e di
+orientamento",,,20,Obbligatorio,1,Primo Semestre,4,
+507246,TIROCINIO DERMATOLOGIA,1,MED,35,"Altro / Tirocini formativi e di
+orientamento",,,20,Obbligatorio,1,Primo Semestre,4,
+507247,TIROCINIO CHIRURGIA PLASTICA,1,MED,19,"Altro / Tirocini formativi e di
+orientamento",,,20,Obbligatorio,1,Primo Semestre,4,
+507248,TIROCINIO PNEUMOLOGIA,2,MED,10,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,2,Secondo Semestre,4,
+507249,TIROCINIO FISIATRIA,1,MED,34,"Altro / Tirocini formativi e di
+orientamento",,,20,Obbligatorio,1,Primo Semestre,4,
+507250,TIROCINI V ANNO,16,,,,,,320,Obbligatorio,3,Primo e Secondo Semestre,5,
+507251,TIROCINIO OTORINOLARINGOIATRIA,2,MED,31,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,3,Primo e Secondo Semestre,5,
+507252,TIROCINIO OCULISTICA,2,MED,30,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,3,Primo e Secondo Semestre,5,
+507253,TIROCINIO MALATTIE INFETTIVE,2,MED,17,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,3,Primo e Secondo Semestre,5,
+507254,"TIROCINIO NEUROPSICHIATRIA
+INFANTILE",1,MED,39,"Altro / Tirocini formativi e di
+orientamento",,,20,Obbligatorio,3,Primo e Secondo Semestre,5,
+507255,TIROCINIO PSICHIATRIA,1,MED,25,"Altro / Tirocini formativi e di
+orientamento",,,20,Obbligatorio,3,Primo e Secondo Semestre,5,
+507256,TIROCINIO CHIRURGIA PEDIATRICA,2,MED,20,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,3,Primo e Secondo Semestre,5,
+507257,TIROCINIO PEDIATRIA,3,MED,38,"Altro / Tirocini formativi e di
+orientamento",,,60,Obbligatorio,3,Primo e Secondo Semestre,5,
+507258,TIROCINI A SCELTA VI ANNO,8,NN,,"Altro / Tirocini formativi e di
+orientamento",,,160,Obbligatorio,1,Primo Semestre,6,
+507259,TIROCINI OBBLIGATORI VI ANNO,8,,,,,,160,Obbligatorio,2,Secondo Semestre,6,
+507260,TIROCINIO CLINICA MEDICA 2,2,MED,09,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,0,,6,
+507261,TIROCINIO CHIRURGIA,2,MED,18,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,0,,6,
+507262,TIROCINIO ANESTESIOLOGIA,2,MED,41,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,0,,6,
+507263,TIROCINIO GINECOLOGIA,2,MED,40,"Altro / Tirocini formativi e di
+orientamento",,,40,Obbligatorio,0,,6,
+507887,PNEUMOLOGIA,4,MED,10,"Caratterizzante / Formazione clinica
+interdisciplinare e medicina basata sulle evidenze",32,,,Obbligatorio,0,,4,
+507888,MALATTIE METABOLICHE,1,MED,09,"Caratterizzante / Clinica generale medica e
+chirurgica",8,,,Obbligatorio,0,,3,
+507889,ANATOMIA PATOLOGICA EMATOLOGICA,1,MED,08,"Caratterizzante / Clinica delle specialità
+medico-chirurgiche",8,,,Obbligatorio,0,,3,
+508606,"APPROFONDIMENTI DI FISIOLOGIA
+UMANA",1,BIO,09,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,1,2
+508607,"TECNICHE DIAGNOSTICHE E
+TERAPEUTICHE: ECG, IMAGING TOMOGRAFICO, ADROTERAPIA",1,FIS,07,"A scelta dello studente / A scelta dello
+studente",8,,,,1,Primo Semestre,1,2
+508608,"INSUFFICIENZA RENALE ACUTA E
+CRONICA: CASI CLINICI IN NEFROLOGIA",1,MED,14,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,4,
+508609,"ORGANIZZAZIONE E MANAGMENT
+SANITARIO",1,MED,42,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,4,
+508610,IL TRAPIANTO CARDIACO,1,MED,23,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,4,
+508612,APPROFONDIMENTI IN ECG,1,MED,11,"A scelta dello studente / A scelta dello
+studente",10,,,,2,Secondo Semestre,4,
+508613,"MECCANISMI DI ANTIBIOTICO
+RESISTENZA: DIAGNOSTICA E IMPATTO CLINICO",1,MED,07,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,4,
+508904,"ANATOMIA TOPOGRAFICA
+PROPEDEUTICA ALLA CHIRURGIA",1,BIO,16,"A scelta dello studente / A scelta dello
+studente",8,,,,1,Primo Semestre,4,
+508905,"FORMARE CON L’ECOGRAFIA ALLE
+SCIENZE DI BASE",2,MED,36,"A scelta dello studente / A scelta dello
+studente",16,,,,2,Secondo Semestre,1,2
+508906,"PRASSI DELLA COMUNICAZIONE
+MEDICA",1,MED,09,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,1,2
+508909,"ANATOMIA MACROSCOPICA
+DIGITALIZZATA",1,BIO,16,"A scelta dello studente / A scelta dello
+studente",8,,,,3,Primo e Secondo Semestre,1,2
+508910,LABORATORIO IN MICROBIOLOGIA,1,MED,07,"Caratterizzante / Patologia generale e
+molecolare, immunopatologia, fisiopatologia generale, microbiologia e
+parassitologia",12,,,Obbligatorio,0,,3,
+508916,ATTUALITA’ IN CHIRUGIA GENERALE,1,MED,18,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,4,
+508917,"APPROFONDIMENTO IN CHIRURGIA:
+CHIRURGIA ROBOTICA E SPECIALISTICA",1,MED,40,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,4,
+508985,GLOBAL HEALTH,1,CHIM,09,"A scelta dello studente / A scelta dello
+studente",8,,,,1,Primo Semestre,4,
+509031,BIOCHIMICA CELLULARE A,2,BIO,10,"Affine/Integrativa / Attività formative
+affini o integrative",16,,,Obbligatorio,2,Secondo Semestre,1,
+509346,IL PAZIENTE CON DISABILITA’,1,MED,02,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,1,2
+509347,AGGIORNAMENTI IN CARDIOLOGIA,1,MED,11,"A scelta dello studente / A scelta dello
+studente",8,,,,1,Primo Semestre,4,
+509348,AGGIORNAMENTI IN NEFROLOGIA,1,MED,14,"A scelta dello studente / A scelta dello
+studente",8,,,,1,Primo Semestre,4,
+510235,"LA RICERCA BIBLIOGRAFICA IN
+AMBIENTE MEDICO",2,MED,01,"A scelta dello studente / A scelta dello
+studente",16,,,,2,Secondo Semestre,1,2
+510236,"LA SEMEIOTICA CARDIOVASCOLARE –
+TONI E SOFFI CARDIACI",1,MED,11,"A scelta dello studente / A scelta dello
+studente",8,,,,1,Primo Semestre,4,
+510237,"LABORATORIO DI ATTIVITA’
+PRATICHE DI BASE – CLINICAL SKILLS PER L’APPROCCIO INTEGRATO AL PAZIENTE",1,MED,09,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,4,
+510238,"ABILITA’ NEL COMUNICARE LE
+CATTIVE NOTIZIE NEL MONDO SANITARIO",1,MED,09,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,4,
+510239,MEDICINA MOLECOLARE,1,MED,15,"A scelta dello studente / A scelta dello
+studente",8,,,,2,Secondo Semestre,4,
+510455,MEDICINA PREVENTIVA,5,,,,,40,,Obbligatorio,1,Primo Semestre,3,
+510456,IGIENE E MEDICINA DI COMUNITA’,4,MED,42,"Caratterizzante / Fisiopatologia,
+metodologia clinica, propedeutica clinica e sistematica medico-chirurgica",32,,,Obbligatorio,0,,3,
+510457,ECONOMIA AZIENDALE,1,SECS-P,07,"Caratterizzante / Scienze umane, politiche
+della salute e management sanitario",8,,,Obbligatorio,0,,3,
