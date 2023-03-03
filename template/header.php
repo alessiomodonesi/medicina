@@ -12,7 +12,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="?page=1">Archivio</a></li>
-                        <li><a class="dropdown-item" href="?page=2">Modifica</a></li>
+                        <li><a class="dropdown-item" href="?page=2">Aggiungi</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -21,7 +21,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="?page=3">Archivio</a></li>
-                        <li><a class="dropdown-item" href="?page=4">Modifica</a></li>
+                        <li><a class="dropdown-item" href="?page=4">Aggiungi</a></li>
                     </ul>
                 </li>
             </ul>

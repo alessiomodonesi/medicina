@@ -2,19 +2,10 @@ body {
     background-color: white !important;
 }
 
-/* #header {
-
-} */
-
-/* #main {
-
-} */
-
-/* #footer {
-
-} */
+.edit-form {
+    margin-top: 3vh;
+}
 
 .logout-btn {
     margin-top: 3vh;
-    margin-bottom: 1vh;
 }

@@ -46,7 +46,7 @@ class Model
 
     function getArchiveActivity()
     {
-        $query = "SELECT DISTINCT p.codice, p.nome FROM piano_di_studi p
+        $query = "SELECT DISTINCT * FROM piano_di_studi p
                     INNER JOIN formativa_didattica fd ON p.codice = fd.formativa;
                 ";
 
@@ -56,7 +56,7 @@ class Model
 
     function getArchiveUnity()
     {
-        $query = "SELECT DISTINCT p.codice, p.nome FROM piano_di_studi p
+        $query = "SELECT DISTINCT * FROM piano_di_studi p
                     INNER JOIN formativa_didattica fd ON p.codice = fd.didattica;
                 ";
 

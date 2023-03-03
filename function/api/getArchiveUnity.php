@@ -19,7 +19,9 @@ if ($stmt->num_rows > 0) {
         extract($record);
         $unity_record = array(
             'codice' => $codice,
-            'nome' => $nome
+            'nome' => $nome,
+            'cfu' => $cfu,
+            'settore' => $settore
         );
         array_push($unity_arr, $unity_record);
     }

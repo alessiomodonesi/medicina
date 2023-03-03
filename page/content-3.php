@@ -11,6 +11,8 @@ $array = json_decode(file_get_contents($url));
                 <tr>
                     <th scope="col">Codice</th>
                     <th scope="col">Nome</th>
+                    <th scope="col">CFU</th>
+                    <th scope="col">Settore</th>
                 </tr>
             </thead>
             <tbody>
@@ -18,6 +20,8 @@ $array = json_decode(file_get_contents($url));
                     <tr>
                         <td><?php echo $array[$i]->codice; ?></td>
                         <td><?php echo $array[$i]->nome; ?></td>
+                        <td><?php echo $array[$i]->cfu; ?></td>
+                        <td><?php echo $array[$i]->settore; ?></td>
                     </tr>
                 <?php endfor; ?>
             </tbody>

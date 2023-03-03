@@ -19,7 +19,8 @@ if ($stmt->num_rows > 0) {
         extract($record);
         $activity_record = array(
             'codice' => $codice,
-            'nome' => $nome
+            'nome' => $nome,
+            'cfu' => $cfu
         );
         array_push($activity_arr, $activity_record);
     }
