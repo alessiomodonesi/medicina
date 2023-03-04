@@ -1,5 +1,5 @@
 <?php
-$url = 'http://localhost/registro/function/api/getArchiveUnity.php';
+$url = 'http://localhost/registro/function/api/getDividedUnity.php';
 $array = json_decode(file_get_contents($url));
 ?>
 
@@ -9,19 +9,19 @@ $array = json_decode(file_get_contents($url));
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Codice</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">CFU</th>
-                    <th scope="col">Settore</th>
+                    <th scope="col">Codice Attività</th>
+                    <th scope="col">Nome Attività</th>
+                    <th scope="col">Codice Unità</th>
+                    <th scope="col">Nome Unità</th>
                 </tr>
             </thead>
             <tbody>
                 <?php for ($i = 0; $i < count($array); $i++) : ?>
                     <tr>
-                        <td><?php echo $array[$i]->codice; ?></td>
-                        <td><?php echo $array[$i]->nome; ?></td>
-                        <td><?php echo $array[$i]->cfu; ?></td>
-                        <td><?php echo $array[$i]->settore; ?></td>
+                        <td><?php echo $array[$i]->a_codice; ?></td>
+                        <td><?php echo $array[$i]->a_nome; ?></td>
+                        <td><?php echo $array[$i]->u_codice; ?></td>
+                        <td><?php echo $array[$i]->u_nome; ?></td>
                     </tr>
                 <?php endfor; ?>
             </tbody>
