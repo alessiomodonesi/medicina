@@ -2,7 +2,6 @@
 
 function login($data)
 {
-    // $url = 'http://localhost/food-api/API/user/login.php';
     $url = 'http://localhost/registro/function/login/api.php';
     $curl = curl_init($url);
     curl_setopt($curl, CURLOPT_URL, $url);
