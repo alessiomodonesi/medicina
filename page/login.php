@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="col-4 text-center">
             <form method="post">
                 <div class="form-floating mb-3 email">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="username" name="email">
                     <label for="floatingInput">Email address</label>
                 </div>
                 <div class="form-floating mb-3 password">
