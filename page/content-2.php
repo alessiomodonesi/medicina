@@ -4,16 +4,12 @@
     <div class="col-6 text-center edit-form">
         <form>
             <div class="mb-3">
-                <label for="codice" class="form-label">Inserisci il codice di 6 cifre</label>
+                <label for="codice" class="form-label">Inserisci il codice della nuova attività</label>
                 <input type="text" class="form-control" id="inputCodice">
             </div>
             <div class="mb-3">
-                <label for="nome" class="form-label">Inserisci il nome dell'attività</label>
+                <label for="nome" class="form-label">Inserisci il nome della nuova attività</label>
                 <input type="text" class="form-control" id="inputNome">
-            </div>
-            <div class="mb-3">
-                <label for="cfu" class="form-label">Inserisci quanti CFU vale l'attività</label>
-                <input type="number" class="form-control" id="inputCFU">
             </div>
             <button type="submit" class="btn btn-outline-dark">Aggiungi</button>
         </form>

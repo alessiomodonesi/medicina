@@ -4,16 +4,16 @@
     <div class="col-6 text-center edit-form">
         <form>
             <div class="mb-3">
-                <label for="codice" class="form-label">Inserisci il codice di 6 cifre</label>
-                <input type="text" class="form-control" id="inputCodice">
+                <label for="codice" class="form-label">Inserisci il codice dell'attività di riferimento</label>
+                <input type="text" class="form-control">
             </div>
             <div class="mb-3">
-                <label for="nome" class="form-label">Inserisci il nome dell'unità</label>
-                <input type="text" class="form-control" id="inputNome">
+                <label for="codice" class="form-label">Inserisci il codice della nuova unità</label>
+                <input type="text" class="form-control">
             </div>
             <div class="mb-3">
-                <label for="cfu" class="form-label">Inserisci quanti CFU vale l'unità</label>
-                <input type="number" class="form-control" id="inputCFU">
+                <label for="nome" class="form-label">Inserisci il nome della nuova unità</label>
+                <input type="text" class="form-control">
             </div>
             <button type="submit" class="btn btn-outline-dark">Aggiungi</button>
         </form>
