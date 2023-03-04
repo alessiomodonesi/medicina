@@ -14,11 +14,8 @@ function login($data)
     );
 
     curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-
     curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
-
     $responseJson = curl_exec($curl);
-
     curl_close($curl);
 
     $response = json_decode($responseJson);
