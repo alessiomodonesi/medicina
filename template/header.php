@@ -12,7 +12,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="?page=1">Archivio</a></li>
-                        <li><a class="dropdown-item" href="?page=2">Aggiungi</a></li>
+                        <li><a class="dropdown-item" href="?page=2">Modifica</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -21,13 +21,13 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="?page=3">Archivio</a></li>
-                        <li><a class="dropdown-item" href="?page=4">Aggiungi</a></li>
+                        <li><a class="dropdown-item" href="?page=4">Modifica</a></li>
                     </ul>
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Cerca</button>
             </form>
         </div>
     </div>

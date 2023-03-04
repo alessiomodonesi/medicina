@@ -1,4 +1,4 @@
-<h3 class="text-center"><?php echo "Aggiungi Unità"; ?></h3>
+<h3 class="text-center"><?php echo "Modifica unità"; ?></h3>
 <div class="row">
     <div class="col-3"></div>
     <div class="col-6 text-center edit-form">
@@ -16,6 +16,7 @@
                 <input type="text" class="form-control">
             </div>
             <button type="submit" class="btn btn-outline-dark">Aggiungi</button>
+            <button type="submit" class="btn btn-outline-dark">Modifica</button>
         </form>
     </div>
     <div class="col-3"></div>

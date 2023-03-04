@@ -3,7 +3,7 @@ $url = 'http://localhost/registro/function/api/getArchiveActivity.php';
 $array = json_decode(file_get_contents($url));
 ?>
 
-<h3 class="text-center"><?php echo "Attività Didattiche"; ?></h3>
+<h3 class="text-center"><?php echo "Attività didattiche"; ?></h3>
 <div class="row">
     <div class="col-12">
         <table class="table">
