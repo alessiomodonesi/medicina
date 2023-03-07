@@ -112,7 +112,7 @@ class Model
         return $stmt;
     }
 
-    function setAttività($codice, $nome)
+    function setActivity($codice, $nome)
     {
         $query = "INSERT INTO piano_di_studi (codice, nome)
                     VALUES('$codice', '$nome');
@@ -122,7 +122,7 @@ class Model
         return $stmt;
     }
 
-    function setUnità($attività, $codice)
+    function setUnity($attività, $codice)
     {
         $query = "INSERT INTO formativa_didattica (formativa, didattica)
                     VALUES('$attività', '$codice');

@@ -2,14 +2,14 @@
 <div class="row">
     <div class="col-3"></div>
     <div class="col-6 text-center edit-form">
-        <form>
+        <form method="post">
             <div class="mb-3">
-                <label for="codice" class="form-label">Inserisci il codice della nuova attività</label>
-                <input type="text" class="form-control" id="inputCodice">
+                <label for="codice" class="form-label">Inserisci il codice dell'attività</label>
+                <input type="text" class="form-control" name="codice">
             </div>
             <div class="mb-3">
-                <label for="nome" class="form-label">Inserisci il nome della nuova attività</label>
-                <input type="text" class="form-control" id="inputNome">
+                <label for="nome" class="form-label">Inserisci il nome dell'attività</label>
+                <input type="text" class="form-control" name="nome">
             </div>
             <button type="submit" class="btn btn-outline-dark">Aggiungi</button>
             <button type="submit" class="btn btn-outline-dark">Modifica</button>
