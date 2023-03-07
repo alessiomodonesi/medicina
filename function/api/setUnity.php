@@ -11,7 +11,8 @@ $db = $database->connect();
 
 $unity = new Model($db);
 $attività = $_POST["attività"];
-$codice = $_POST["codice"];
+$unità = $_POST["unità"];
 
-$stmt = $unity->setUnity($attività, $codice);
+$stmt = $unity->setUnity($attività, $unità);
+header("Location: http://localhost/registro");
 die();

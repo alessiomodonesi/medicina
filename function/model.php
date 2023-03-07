@@ -122,10 +122,10 @@ class Model
         return $stmt;
     }
 
-    function setUnity($attività, $codice)
+    function setUnity($attività, $unità)
     {
         $query = "INSERT INTO formativa_didattica (formativa, didattica)
-                    VALUES('$attività', '$codice');
+                    VALUES('$attività', '$unità');
                 ";
 
         $stmt = $this->conn->query($query);

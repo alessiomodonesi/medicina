@@ -6,6 +6,15 @@ body {
     margin-top: 3vh;
 }
 
+.username {
+    margin-top: 4vh;
+}
+
 .logout-btn {
-    margin-top: 3vh;
+    margin-top: 2vh;
+}
+
+.nav-item {
+    margin-left: 1vw;
+    margin-right: 1vw;
 }

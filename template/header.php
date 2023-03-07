@@ -6,31 +6,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="?page=1">Attività Formative</a>
+                </li>
                 <?php if ($user[0]->email == "admin") : ?>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Attività didattiche
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="?page=1">Archivio</a></li>
-                            <li><a class="dropdown-item" href="?page=2">Modifica</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Unità formative
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="?page=3">Archivio</a></li>
-                            <li><a class="dropdown-item" href="?page=4">Modifica</a></li>
-                        </ul>
-                    </li>
-                <?php else : ?>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?page=1">Attività didattiche</a>
+                        <a class="nav-link active" aria-current="page" href="?page=2">Aggiungi Piani</a>
                     </li>
+                <?php endif; ?>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="?page=3">Unità Didattiche</a>
+                </li>
+                <?php if ($user[0]->email == "admin") : ?>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?page=3">Unità formative</a>
+                        <a class="nav-link active" aria-current="page" href="?page=4">Collega Unità</a>
                     </li>
                 <?php endif; ?>
             </ul>

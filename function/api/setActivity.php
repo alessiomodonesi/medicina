@@ -14,4 +14,5 @@ $codice = $_POST["codice"];
 $nome = $_POST["nome"];
 
 $stmt = $unity->setActivity($codice, $nome);
+header("Location: http://localhost/registro");
 die();

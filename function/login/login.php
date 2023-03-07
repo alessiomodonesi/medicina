@@ -2,7 +2,7 @@
 
 function login($data)
 {
-    $url = 'http://localhost/registro/function/login/api.php';
+    $url = 'http://localhost/registro/function/api/login.php';
     $curl = curl_init($url);
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_POST, true);

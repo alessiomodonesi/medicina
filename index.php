@@ -24,41 +24,63 @@ $user = checkLogin();
 
     <div class="container-fluid" id="main"></br>
         <?php if (!isset($_GET['page'])) : ?>
-            <h3 class="text-center"> <?php echo "Registro Universitario"; ?>
-                <div class="row">
-                    <div class="col-12">
-                        <a class="btn btn-outline-dark logout-btn" href="function/login/logout.php" role="button">Logout</a>
-                    </div>
+            <h3 class="text-center"> <?php echo "Home Page"; ?></h3>
+            <div class="row username">
+                <div class="col-5"></div>
+                <div class="col-2 text-center">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><?php echo $user[0]->email; ?></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            <?php endif; ?>
+                <div class="col-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-2 text-center">
+                    <a class="btn btn-outline-dark logout-btn" href="function/login/logout.php" role="button">Logout</a>
+                </div>
+                <div class="col-5"></div>
+            </div>
+        <?php endif; ?>
 
-            <?php
-            if (isset($_GET['page'])) {
-                $page = $_GET['page'];
-                switch ($page) {
-                    case 1:
-                        require "page/content-1.php";
-                        break;
-                    case 2:
-                        if ($user[0]->email == "admin")
-                            require "page/content-2.php";
-                        else
-                            require("page/content-404.php");
-                        break;
-                    case 3:
-                        require "page/content-3.php";
-                        break;
-                    case 4:
-                        if ($user[0]->email == "admin")
-                            require "page/content-4.php";
-                        else
-                            require("page/content-404.php");
-                        break;
-                    default:
+        <?php
+        if (isset($_GET['page'])) {
+            $page = $_GET['page'];
+            switch ($page) {
+                case 1:
+                    require "page/content-1.php";
+                    break;
+                case 2:
+                    if ($user[0]->email == "admin")
+                        require "page/content-2.php";
+                    else
                         require("page/content-404.php");
-                }
+                    break;
+                case 3:
+                    require "page/content-3.php";
+                    break;
+                case 4:
+                    if ($user[0]->email == "admin")
+                        require "page/content-4.php";
+                    else
+                        require("page/content-404.php");
+                    break;
+                default:
+                    require("page/content-404.php");
             }
-            ?>
+        }
+        ?>
     </div></br>
 
     <div class="container-fluid" id="footer">

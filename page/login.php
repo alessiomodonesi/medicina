@@ -3,9 +3,9 @@ include_once dirname(__FILE__) . '/../function/login/login.php';
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (!empty($_POST['email']) && !empty($_POST['password'])) {
+    if (!empty($_POST['username']) && !empty($_POST['password'])) {
         $data = [
-            "email" => $_POST['email'],
+            "email" => $_POST['username'],
             "password" => $_POST['password'],
         ];
         login($data);
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="col-4 text-center">
             <form method="post">
                 <div class="form-floating mb-3 username">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="username" name="email">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="username" name="username">
                     <label for="floatingInput">Username</label>
                 </div>
                 <div class="form-floating mb-3 password">
