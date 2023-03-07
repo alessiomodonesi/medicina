@@ -3,17 +3,17 @@
     <div class="col-3"></div>
     <div class="col-6 text-center edit-form">
         <form method="post">
-            <div class="mb-3">
-                <label for="codice" class="form-label">Inserisci il codice dell'attività</label>
-                <input type="text" class="form-control" name="attività">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="attività" name="attività">
+                <label for="floatingInput">Codice dell'attività</label>
             </div>
-            <div class="mb-3">
-                <label for="codice" class="form-label">Inserisci il codice dell'unità</label>
-                <input type="text" class="form-control" name="codice">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="codice" name="codice">
+                <label for="floatingInput">Codice dell'unità</label>
             </div>
-            <div class="mb-3">
-                <label for="nome" class="form-label">Inserisci il nome dell'unità</label>
-                <input type="text" class="form-control" name="nome">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="nome" name="nome">
+                <label for="floatingInput">Nome dell'unità</label>
             </div>
             <button type="submit" class="btn btn-outline-dark">Aggiungi</button>
             <button type="submit" class="btn btn-outline-dark">Modifica</button>
