@@ -23,6 +23,13 @@ $array = json_decode(file_get_contents($url));
                     </tr>
                 <?php endfor; ?>
             </tbody>
+            <tfooter>
+                <tr>
+                    <th scope="col">Codice</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">CFU</th>
+                </tr>
+            </tfooter>
         </table>
     </div>
 </div>

@@ -40,13 +40,19 @@ $user = checkLogin();
                         require "page/content-1.php";
                         break;
                     case 2:
-                        require "page/content-2.php";
+                        if ($user[0]->email == "admin")
+                            require "page/content-2.php";
+                        else
+                            require("page/content-404.php");
                         break;
                     case 3:
                         require "page/content-3.php";
                         break;
                     case 4:
-                        require "page/content-4.php";
+                        if ($user[0]->email == "admin")
+                            require "page/content-4.php";
+                        else
+                            require("page/content-404.php");
                         break;
                     default:
                         require("page/content-404.php");
