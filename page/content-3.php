@@ -51,7 +51,7 @@ if (isset($_GET['codice'])) {
 
                         <?php if ($user[0]->ruolo == "Admin") : ?>
                             <td>
-                                <a class="btn btn-outline-dark" style="background-color: white;" href="http://localhost/registro?page=3&codice=<?php echo $row["codice"]; ?>" role="button">
+                                <a class="btn btn-outline-dark" href="http://localhost/registro?page=3&codice=<?php echo $row["codice"]; ?>" role="button">
                                     <img src="http://localhost/registro/css/img/trash.png" alt="trash" width="20" height="20" class="d-inline-block">
                                 </a>
                             </td>

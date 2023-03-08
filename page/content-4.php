@@ -19,7 +19,7 @@ if (isset($_POST['attività']) && isset($_POST['unità'])) {
 
 ?>
 
-<h3 class="title text-center"><?php echo "Collega Unità Didattiche"; ?></h3>
+<h3 class="title text-center"><?php echo "Collega Unità"; ?></h3>
 <div class="row justify-content-center">
     <div class="col-6 text-center edit-form">
         <form method="post">

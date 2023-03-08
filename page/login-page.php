@@ -44,11 +44,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <label class="form-check-label" id="show-passwd">Show Password</label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-outline-dark login-btn" style="margin-top: 2vh;">Login</button>
+                <button type="submit" class="btn btn-outline-dark login-btn">Login</button>
             </form>
         </div>
     </div>
 </div>
+
+<style>
+    .login-btn {
+        margin-top: 2vh;
+    }
+
+    .btn-outline-dark:hover {
+        background-color: white;
+        font-weight: bold;
+        color: black;
+    }
+</style>
 
 <script>
     function hidePasswd() {

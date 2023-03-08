@@ -30,3 +30,13 @@ body {
 .title {
     margin-bottom: 2vh;
 }
+
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.btn-outline-dark:hover {
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
