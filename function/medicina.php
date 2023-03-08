@@ -54,6 +54,14 @@ class Medicina extends Base
         return $stmt;
     }
 
+    function deletePlane($codice)
+    {
+        $query = "DELETE FROM piano_di_studi p WHERE p.codice=$codice";
+
+        $stmt = $this->conn->query($query);
+        return $stmt;
+    }
+
     // altre funzioni non usate
 
     function getArchiveUnity()
