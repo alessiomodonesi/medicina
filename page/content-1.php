@@ -25,7 +25,7 @@ while ($record = $response->fetch_assoc()) {
             <tbody>
                 <?php foreach ($array as $row) : ?>
                     <tr>
-                        <td><?php echo $row["codice"]; ?></td>
+                        <td style="font-weight: bold;"><?php echo $row["codice"]; ?></td>
                         <td><?php echo $row["nome"]; ?></td>
 
                         <?php if ($user[0]->email == "admin") : ?>

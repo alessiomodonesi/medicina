@@ -27,10 +27,10 @@ while ($record = $response->fetch_assoc()) {
             <tbody>
                 <?php foreach ($array as $row) : ?>
                     <tr>
-                        <td><?php echo $row["a_codice"]; ?></td>
+                        <td style="font-weight: bold;"><?php echo $row["a_codice"]; ?></td>
                         <td><?php echo $row["a_nome"]; ?></td>
 
-                        <td><?php echo $row["u_codice"]; ?></td>
+                        <td style="font-weight: bold;"><?php echo $row["u_codice"]; ?></td>
                         <td><?php echo $row["u_nome"]; ?></td>
 
                         <?php if ($user[0]->email == "admin") : ?>

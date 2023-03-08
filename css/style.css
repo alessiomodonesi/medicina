@@ -21,6 +21,7 @@ body {
     margin-top: 4vh;
 }
 
+.login-btn,
 .logout-btn {
     margin-top: 2vh;
 }
