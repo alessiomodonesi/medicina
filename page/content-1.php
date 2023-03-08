@@ -9,6 +9,17 @@ while ($record = $response->fetch_assoc()) {
     $array[] = $record;
 }
 
+if (isset($_GET['codice'])) {
+    $db = new Database();
+    $conn = $db->connect();
+
+    $codice = $_GET['codice'];
+    $query = "DELETE FROM piano_di_studi p WHERE p.codice=$codice";
+
+    $conn->query($query);
+    header("Location: http://localhost/registro?page=1");
+}
+
 ?>
 
 <h3 class="text-center"><?php echo "Attività Formative"; ?></h3>
@@ -29,7 +40,7 @@ while ($record = $response->fetch_assoc()) {
                         <td><?php echo $row["nome"]; ?></td>
 
                         <?php if ($user[0]->email == "admin") : ?>
-                            <td><a class="btn btn-outline-dark delete-btn" href="http://localhost/registro/function/delete.php?codice=<?php echo $row["codice"]; ?>" role="button">Elimina</a></td>
+                            <td><a class="btn btn-outline-dark delete-btn" href="http://localhost/registro?page=1&codice=<?php echo $row["codice"]; ?>" role="button">Elimina</a></td>
                         <? endif; ?>
                     </tr>
                 <?php endforeach; ?>
