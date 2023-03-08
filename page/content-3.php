@@ -32,8 +32,10 @@ if (isset($_GET['codice'])) {
                     <th scope="col">Attività</th>
                     <th scope="col">Codice</th>
                     <th scope="col">Unità</th>
+                    <th scope="col">CFU</th>
+
                     <?php if ($user[0]->ruolo == "Admin") : ?>
-                        <th scope="col">Azione</th>
+                        <th scope="col">Elimina</th>
                     <?php endif; ?>
                 </tr>
             </thead>
@@ -45,6 +47,7 @@ if (isset($_GET['codice'])) {
 
                         <td style="font-weight: bold;"><?php echo $row["u_codice"]; ?></td>
                         <td><?php echo $row["u_nome"]; ?></td>
+                        <td><?php echo $row["u_cfu"]; ?></td>
 
                         <?php if ($user[0]->ruolo == "Admin") : ?>
                             <td>
@@ -62,8 +65,10 @@ if (isset($_GET['codice'])) {
                     <th scope="col">Attività</th>
                     <th scope="col">Codice</th>
                     <th scope="col">Unità</th>
+                    <th scope="col">CFU</th>
+
                     <?php if ($user[0]->ruolo == "Admin") : ?>
-                        <th scope="col">Azione</th>
+                        <th scope="col">Elimina</th>
                     <?php endif; ?>
                 </tr>
             </tfooter>
