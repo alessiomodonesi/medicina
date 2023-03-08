@@ -2,7 +2,7 @@
 
 header("Content-type: application/json; charset=UTF-8");
 include_once dirname(__FILE__) . '/../connect.php';
-include_once dirname(__FILE__) . '/../user.php';
+include_once dirname(__FILE__) . '/user.php';
 
 if (!isset($_GET['id'])) {
     http_response_code(400);

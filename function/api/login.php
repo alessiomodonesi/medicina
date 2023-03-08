@@ -2,7 +2,7 @@
 
 header("Content-type: application/json; charset=UTF-8");
 include_once dirname(__FILE__) . '/../connect.php';
-include_once dirname(__FILE__) . '/../user.php';
+include_once dirname(__FILE__) . '/../login/user.php';
 
 $data = json_decode(file_get_contents("php://input"));
 
