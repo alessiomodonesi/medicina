@@ -9,6 +9,8 @@ class Model
         $this->conn = $db;
     }
 
+    // funzioni per il login (usate tutte)
+
     function login($email, $password)
     {
         $sql = sprintf("SELECT email, password, id FROM `user`");
@@ -58,17 +60,21 @@ class Model
         }
     }
 
-    function getArchiveActivity()
+
+    // inizio funzioni specifiche
+
+    function getArchiveActivity() // funzionare
     {
-        $query = "SELECT DISTINCT * FROM piano_di_studi p
-                    INNER JOIN formativa_didattica fd ON p.codice = fd.formativa;
+        $query = "SELECT * FROM formativa_didattica fd
+                    RIGHT JOIN piano_di_studi p ON p.codice = fd.didattica
+                    WHERE fd.didattica IS NULL;
                 ";
 
         $stmt = $this->conn->query($query);
         return $stmt;
     }
 
-    function getArchiveUnity()
+    function getArchiveUnity() // non usata
     {
         $query = "SELECT DISTINCT * FROM piano_di_studi p
                     INNER JOIN formativa_didattica fd ON p.codice = fd.didattica;
@@ -78,7 +84,7 @@ class Model
         return $stmt;
     }
 
-    function getActivity($codice)
+    function getActivity($codice) // non usata
     {
         $query = "SELECT DISTINCT * FROM piano_di_studi p
                     INNER JOIN formativa_didattica fd ON p.codice = fd.formativa
@@ -89,7 +95,7 @@ class Model
         return $stmt;
     }
 
-    function getUnity($codice)
+    function getUnity($codice) // non usata
     {
         $query = "SELECT DISTINCT * FROM piano_di_studi p
                     INNER JOIN formativa_didattica fd ON p.codice = fd.didattica
@@ -100,7 +106,7 @@ class Model
         return $stmt;
     }
 
-    function getDividedUnity()
+    function getDividedUnity() // funzionante
     {
         $query = "SELECT p1.codice AS 'a_codice', p1.nome AS 'a_nome', p2.codice AS 'u_codice', p2.nome AS 'u_nome' 
                     FROM piano_di_studi p1
@@ -112,7 +118,7 @@ class Model
         return $stmt;
     }
 
-    function setActivity($codice, $nome)
+    function setActivity($codice, $nome) // funzionante
     {
         $query = "INSERT INTO piano_di_studi (codice, nome)
                     VALUES('$codice', '$nome');
@@ -122,7 +128,7 @@ class Model
         return $stmt;
     }
 
-    function setUnity($attività, $unità)
+    function setUnity($attività, $unità) // funzionante
     {
         $query = "INSERT INTO formativa_didattica (formativa, didattica)
                     VALUES('$attività', '$unità');
