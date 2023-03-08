@@ -25,8 +25,14 @@ class User
     function getUser($id)
     {
         $sql = sprintf(
-            "SELECT id, name, surname, email
-            FROM user
+            "SELECT
+                u.id AS id,
+	            u.name AS nome,
+	            u.surname AS cognome,
+	            u.email AS email,
+	            p.name AS ruolo
+            FROM `user` u
+            INNER JOIN `privileges` p on u.id = p.`user`
             WHERE id = %d;",
             $this->conn->real_escape_string($id)
         );

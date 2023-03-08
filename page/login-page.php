@@ -2,14 +2,17 @@
 
 include_once dirname(__FILE__) . '/../function/login/login.php';
 session_start();
+$error = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (!empty($_POST['username']) && !empty($_POST['password'])) {
+    if (isset($_POST['username']) && isset($_POST['password'])) {
         $data = [
             "email" => $_POST['username'],
             "password" => $_POST['password'],
         ];
-        login($data);
+        if (login($data) == -1) {
+            $error = "Credenziali errate. Si prega di riprovare.";
+        }
     }
 }
 
@@ -19,12 +22,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </br>
-<h3 class="text-center"><?php echo "Login"; ?></h3>
+<h2 class="title text-center"><?php echo "Login"; ?></h2>
 </br>
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-4"></div>
+    <div class="row justify-content-center">
         <div class="col-4 text-center">
             <form method="post">
                 <div class="form-floating mb-3 username">
@@ -37,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div class="row utils">
                     <div class="col-12 text-center">
+                        <p><?php echo $error; ?></p>
                         <input type="checkbox" class="form-check-input" id="show-btn" onclick="hidePasswd()">
                         <label class="form-check-label" id="show-passwd">Show Password</label>
                     </div>
@@ -44,7 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <button type="submit" class="btn btn-outline-dark login-btn" style="margin-top: 2vh;">Login</button>
             </form>
         </div>
-        <div class="col-4"></div>
     </div>
 </div>
 

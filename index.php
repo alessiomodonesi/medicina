@@ -25,32 +25,32 @@ $user = checkLogin();
     <div class="container-fluid" id="main"></br>
         <?php if (!isset($_GET['page'])) : ?>
             <h3 class="text-center"> <?php echo "Home Page"; ?></h3>
-            <div class="row username">
-                <div class="col-5"></div>
-                <div class="col-2 text-center">
-                    <table class="table">
+            <div class="row justify-content-center username">
+                <div class="col-4 text-center">
+                    <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Cognome</th>
                                 <th scope="col">Username</th>
+                                <th scope="col">Ruolo</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
+                                <td><?php echo $user[0]->nome; ?></td>
+                                <td><?php echo $user[0]->cognome; ?></td>
                                 <td><?php echo $user[0]->email; ?></td>
+                                <td><?php echo $user[0]->ruolo; ?></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="col-5"></div>
             </div>
-            <div class="row">
-                <div class="col-5"></div>
-                <div class="col-2 text-center">
-                    <a class="btn btn-outline-dark logout-btn" href="function/login/logout.php" role="button">Logout</a>
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <a class="btn btn-outline-dark logout-btn" href="function/login/logout.php" role="button">Esci</a>
                 </div>
-                <div class="col-5"></div>
             </div>
         <?php endif; ?>
 
@@ -62,7 +62,7 @@ $user = checkLogin();
                     require "page/content-1.php";
                     break;
                 case 2:
-                    if ($user[0]->email == "admin")
+                    if ($user[0]->ruolo == "Admin")
                         require "page/content-2.php";
                     else
                         require("page/content-404.php");
@@ -71,7 +71,7 @@ $user = checkLogin();
                     require "page/content-3.php";
                     break;
                 case 4:
-                    if ($user[0]->email == "admin")
+                    if ($user[0]->ruolo == "Admin")
                         require "page/content-4.php";
                     else
                         require("page/content-404.php");

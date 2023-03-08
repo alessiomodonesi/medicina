@@ -19,9 +19,8 @@ if (isset($_POST['attività']) && isset($_POST['unità'])) {
 
 ?>
 
-<h3 class="text-center"><?php echo "Collega Unità Didattiche"; ?></h3>
-<div class="row">
-    <div class="col-3"></div>
+<h3 class="title text-center"><?php echo "Collega Unità Didattiche"; ?></h3>
+<div class="row justify-content-center">
     <div class="col-6 text-center edit-form">
         <form method="post">
             <div class="form-floating mb-3">
@@ -36,5 +35,4 @@ if (isset($_POST['attività']) && isset($_POST['unità'])) {
             <button type="submit" class="btn btn-outline-dark" disabled>Modifica</button>
         </form>
     </div>
-    <div class="col-3"></div>
 </div>

@@ -22,17 +22,19 @@ if (isset($_GET['codice'])) {
 
 ?>
 
-<h3 class="text-center"><?php echo "Unità Didattiche"; ?></h3>
-<div class="row">
-    <div class="col-12">
-        <table class="table">
+<h3 class="title text-center"><?php echo "Unità Didattiche"; ?></h3>
+<div class="row justify-content-center">
+    <div class="col-10">
+        <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">Codice Attività</th>
-                    <th scope="col">Nome Attività</th>
-                    <th scope="col">Codice Unità</th>
-                    <th scope="col">Nome Unità</th>
-                    <th scope="col">Azione</th>
+                    <th scope="col">Codice</th>
+                    <th scope="col">Attività</th>
+                    <th scope="col">Codice</th>
+                    <th scope="col">Unità</th>
+                    <?php if ($user[0]->ruolo == "Admin") : ?>
+                        <th scope="col">Azione</th>
+                    <?php endif; ?>
                 </tr>
             </thead>
             <tbody>
@@ -44,19 +46,25 @@ if (isset($_GET['codice'])) {
                         <td style="font-weight: bold;"><?php echo $row["u_codice"]; ?></td>
                         <td><?php echo $row["u_nome"]; ?></td>
 
-                        <?php if ($user[0]->email == "admin") : ?>
-                            <td><a class="btn btn-outline-dark delete-btn" href="http://localhost/registro?page=3&codice=<?php echo $row["codice"]; ?>" role="button">Elimina</a></td>
+                        <?php if ($user[0]->ruolo == "Admin") : ?>
+                            <td>
+                                <a class="btn btn-outline-dark" style="background-color: white;" href="http://localhost/registro?page=3&codice=<?php echo $row["codice"]; ?>" role="button">
+                                    <img src="http://localhost/registro/css/img/trash.png" alt="trash" width="20" height="20" class="d-inline-block">
+                                </a>
+                            </td>
                         <? endif; ?>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
             <tfooter>
                 <tr>
-                    <th scope="col">Codice Attività</th>
-                    <th scope="col">Nome Attività</th>
-                    <th scope="col">Codice Unità</th>
-                    <th scope="col">Nome Unità</th>
-                    <th scope="col">Azione</th>
+                    <th scope="col">Codice</th>
+                    <th scope="col">Attività</th>
+                    <th scope="col">Codice</th>
+                    <th scope="col">Unità</th>
+                    <?php if ($user[0]->ruolo == "Admin") : ?>
+                        <th scope="col">Azione</th>
+                    <?php endif; ?>
                 </tr>
             </tfooter>
         </table>

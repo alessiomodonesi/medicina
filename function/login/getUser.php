@@ -6,7 +6,7 @@ include_once dirname(__FILE__) . '/user.php';
 
 if (!isset($_GET['id'])) {
     http_response_code(400);
-    echo json_encode(["message" => "Insert the id param"]);
+    echo json_encode(["message" => "Insert the ID"]);
     exit();
 }
 
