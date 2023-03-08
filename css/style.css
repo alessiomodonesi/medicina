@@ -29,3 +29,15 @@ body {
     margin-left: 1vw;
     margin-right: 1vw;
 }
+
+#delete-btn {
+    width: 100%;
+    margin-top: .5vh;
+    margin-bottom: .5vh;
+}
+
+#delete-btn:hover {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}

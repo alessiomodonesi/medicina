@@ -29,7 +29,7 @@ while ($record = $response->fetch_assoc()) {
                         <td><?php echo $row["nome"]; ?></td>
 
                         <?php if ($user[0]->email == "admin") : ?>
-                            <td><a href="http://localhost/registro/function/delete.php?codice=<?php echo $row["codice"]; ?>">Elimina</a></td>
+                            <td><a class="btn btn-outline-dark delete-btn" href="http://localhost/registro/function/delete.php?codice=<?php echo $row["codice"]; ?>" role="button">Elimina</a></td>
                         <? endif; ?>
                     </tr>
                 <?php endforeach; ?>
