@@ -1,15 +1,20 @@
 <?php
 
-include_once dirname(__FILE__) . '/../function/setUnity.php';
+include_once dirname(__FILE__) . '/../function/connect.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (!empty($_POST['attività']) && !empty($_POST['unità'])) {
-        $data = [
-            "attività" => $_POST['attività'],
-            "unità" => $_POST['unità'],
-        ];
-        setUnity($data);
-    }
+$db = new Database();
+$conn = $db->connect();
+
+if (isset($_POST['attività']) && isset($_POST['unità'])) {
+    $query = sprintf(
+        "INSERT INTO formativa_didattica (formativa, didattica)
+                VALUES('%s', '%s')",
+        $_POST['attività'],
+        $_POST['unità']
+    );
+
+    $conn->query($query);
+    header("Location: http://localhost/registro?page=3");
 }
 
 ?>

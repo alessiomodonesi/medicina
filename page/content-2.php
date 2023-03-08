@@ -1,15 +1,20 @@
 <?php
 
-include_once dirname(__FILE__) . '/../function/setActivity.php';
+include_once dirname(__FILE__) . '/../function/connect.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (!empty($_POST['codice']) && !empty($_POST['nome'])) {
-        $data = [
-            "codice" => $_POST['codice'],
-            "nome" => $_POST['nome'],
-        ];
-        setActivity($data);
-    }
+$db = new Database();
+$conn = $db->connect();
+
+if (isset($_POST['codice']) && isset($_POST['nome'])) {
+    $query = sprintf(
+        "INSERT INTO piano_di_studi (codice, nome)
+                VALUES('%s', '%s')",
+        $_POST['codice'],
+        $_POST['nome']
+    );
+
+    $conn->query($query);
+    header("Location: http://localhost/registro?page=1");
 }
 
 ?>
