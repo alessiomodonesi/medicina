@@ -40,8 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="row utils">
                     <div class="col-12 text-center">
                         <p><?php echo $error; ?></p>
-                        <input type="checkbox" class="form-check-input" id="show-btn" onclick="hidePasswd()">
-                        <label class="form-check-label" id="show-passwd">Show Password</label>
+                        <input type="checkbox" class="form-check-input" id="show-btn" onclick="hide()">
+                        <label class="form-check-label" id="show-passwd">Mostra Password</label>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-outline-dark login-btn">Login</button>
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </style>
 
 <script>
-    function hidePasswd() {
+    function hide() {
         var x = document.getElementById("floatingPassword");
         if (x.type === "password") {
             x.type = "text";

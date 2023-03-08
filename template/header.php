@@ -9,15 +9,13 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="?page=1">Attività Formative</a>
                 </li>
-                <?php if ($user[0]->ruolo == "Admin") : ?>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?page=2">Aggiungi Piani</a>
-                    </li>
-                <?php endif; ?>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="?page=3">Unità Didattiche</a>
                 </li>
                 <?php if ($user[0]->ruolo == "Admin") : ?>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="?page=2">Aggiungi Piani</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="?page=4">Collega Unità</a>
                     </li>

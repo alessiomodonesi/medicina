@@ -5,16 +5,18 @@ include_once dirname(__FILE__) . '/../function/connect.php';
 $db = new Database();
 $conn = $db->connect();
 
-if (isset($_POST['attività']) && isset($_POST['unità'])) {
-    $query = sprintf(
-        "INSERT INTO formativa_didattica (formativa, didattica)
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['attività']) && isset($_POST['unità'])) {
+        $query = sprintf(
+            "INSERT INTO formativa_didattica (formativa, didattica)
                 VALUES('%s', '%s')",
-        $_POST['attività'],
-        $_POST['unità']
-    );
+            $_POST['attività'],
+            $_POST['unità']
+        );
 
-    $conn->query($query);
-    header("Location: http://localhost/registro?page=3");
+        $conn->query($query);
+        header("Location: http://localhost/registro?page=3");
+    }
 }
 
 ?>

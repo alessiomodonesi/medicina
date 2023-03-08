@@ -56,25 +56,25 @@ $user = checkLogin();
             $page = $_GET['page'];
             switch ($page) {
                 case 1:
-                    require "page/content-1.php";
+                    require "page/page-1.php";
                     break;
                 case 2:
                     if ($user[0]->ruolo == "Admin")
-                        require "page/content-2.php";
+                        require "page/page-2.php";
                     else
-                        require("page/content-404.php");
+                        require("page/page-404.php");
                     break;
                 case 3:
-                    require "page/content-3.php";
+                    require "page/page-3.php";
                     break;
                 case 4:
                     if ($user[0]->ruolo == "Admin")
-                        require "page/content-4.php";
+                        require "page/page-4.php";
                     else
-                        require("page/content-404.php");
+                        require("page/page-404.php");
                     break;
                 default:
-                    require("page/content-404.php");
+                    require("page/page-404.php");
             }
 
         endif;
