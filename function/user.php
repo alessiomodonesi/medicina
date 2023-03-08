@@ -5,7 +5,6 @@ require 'base.php';
 class User extends Base
 {
     protected $conn;
-
     public function __construct($db)
     {
         $this->conn = $db;

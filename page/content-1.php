@@ -31,7 +31,6 @@ while ($record = $response->fetch_assoc()) {
                         <?php if ($user[0]->email == "admin") : ?>
                             <td><a href="http://localhost/registro/function/delete.php?codice=<?php echo $row["codice"]; ?>">Elimina</a></td>
                         <? endif; ?>
-
                     </tr>
                 <?php endforeach; ?>
             </tbody>

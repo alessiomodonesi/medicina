@@ -27,7 +27,6 @@ while ($record = $response->fetch_assoc()) {
             <tbody>
                 <?php foreach ($array as $row) : ?>
                     <tr>
-
                         <td><?php echo $row["a_codice"]; ?></td>
                         <td><?php echo $row["a_nome"]; ?></td>
 
@@ -37,7 +36,6 @@ while ($record = $response->fetch_assoc()) {
                         <?php if ($user[0]->email == "admin") : ?>
                             <td><a href="http://localhost/registro/function/delete.php?codice=<?php echo $row["codice"] ?>">Elimina</a></td>
                         <? endif; ?>
-
                     </tr>
                 <?php endforeach; ?>
             </tbody>
