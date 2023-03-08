@@ -9,17 +9,6 @@ while ($record = $response->fetch_assoc()) {
     $array[] = $record;
 }
 
-if (isset($_GET['codice'])) {
-    $db = new Database();
-    $conn = $db->connect();
-
-    $codice = $_GET['codice'];
-    $query = "DELETE FROM piano_di_studi p WHERE p.codice=$codice";
-
-    $conn->query($query);
-    header("Location: http://localhost/registro?page=3");
-}
-
 ?>
 
 <h3 class="title text-center"><?php echo "Unità Didattiche"; ?></h3>
@@ -51,7 +40,7 @@ if (isset($_GET['codice'])) {
 
                         <?php if ($user[0]->ruolo == "Admin") : ?>
                             <td>
-                                <a class="btn btn-outline-dark" href="http://localhost/registro?page=3&codice=<?php echo $row["codice"]; ?>" role="button">
+                                <a class="btn btn-outline-dark" href="http://localhost/registro/function/delete.php?codice=<?php echo $row["codice"]; ?>" role="button">
                                     <img src="http://localhost/registro/css/img/trash.png" alt="trash" width="20" height="20" class="d-inline-block">
                                 </a>
                             </td>

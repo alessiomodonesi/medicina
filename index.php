@@ -52,10 +52,7 @@ $user = checkLogin();
                     <a class="btn btn-outline-dark logout-btn" href="function/login/logout.php" role="button">Esci</a>
                 </div>
             </div>
-        <?php endif; ?>
-
-        <?php
-        if (isset($_GET['page'])) {
+        <?php else :
             $page = $_GET['page'];
             switch ($page) {
                 case 1:
@@ -79,7 +76,8 @@ $user = checkLogin();
                 default:
                     require("page/content-404.php");
             }
-        }
+
+        endif;
         ?>
     </div></br>
 

@@ -4,11 +4,18 @@ require 'connect.php';
 
 function delete()
 {
-    $db = new Database();
-    $conn = $db->connect();
+    if (isset($_GET['codice'])) {
+        $db = new Database();
+        $conn = $db->connect();
 
-    $codice = $_GET['codice'];
-    $query = "DELETE FROM piano_di_studi p WHERE p.codice=$codice";
+        $query = sprintf(
+            "DELETE FROM piano_di_studi WHERE codice = '%s'",
+            $_GET['codice']
+        );
 
-    return $conn->query($query);
+        $conn->query($query);
+        header("Location: http://localhost/registro?page=1");
+    }
 }
+
+delete();
