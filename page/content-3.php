@@ -1,6 +1,14 @@
 <?php
-$url = 'http://localhost/registro/function/api/getDividedUnity.php';
-$array = json_decode(file_get_contents($url));
+
+include_once dirname(__FILE__) . '/../function/getArchiveUnity.php';
+
+$array = array();
+$response = getArchiveUnity();
+
+while ($record = $response->fetch_assoc()) {
+    $array[] = $record;
+}
+
 ?>
 
 <h3 class="text-center"><?php echo "Unità Didattiche"; ?></h3>
@@ -13,22 +21,25 @@ $array = json_decode(file_get_contents($url));
                     <th scope="col">Nome Attività</th>
                     <th scope="col">Codice Unità</th>
                     <th scope="col">Nome Unità</th>
+                    <th scope="col">Azione</th>
                 </tr>
             </thead>
             <tbody>
-                <?php for ($i = 0; $i < count($array); $i++) : ?>
+                <?php foreach ($array as $row) : ?>
                     <tr>
-                        <?php if ($i == 0 || $array[$i]->a_codice != $array[$i - 1]->a_codice) : ?>
-                            <td><?php echo $array[$i]->a_codice; ?></td>
-                            <td><?php echo $array[$i]->a_nome; ?></td>
-                        <?php else : ?>
-                            <td></td>
-                            <td></td>
-                        <?php endif; ?>
-                        <td><?php echo $array[$i]->u_codice; ?></td>
-                        <td><?php echo $array[$i]->u_nome; ?></td>
+
+                        <td><?php echo $row["a_codice"]; ?></td>
+                        <td><?php echo $row["a_nome"]; ?></td>
+
+                        <td><?php echo $row["u_codice"]; ?></td>
+                        <td><?php echo $row["u_nome"]; ?></td>
+
+                        <?php if ($user[0]->email == "admin") : ?>
+                            <td><a href="http://localhost/registro/function/delete.php?codice=<?php echo $row["codice"] ?>">Elimina</a></td>
+                        <? endif; ?>
+
                     </tr>
-                <?php endfor; ?>
+                <?php endforeach; ?>
             </tbody>
             <tfooter>
                 <tr>
@@ -36,6 +47,7 @@ $array = json_decode(file_get_contents($url));
                     <th scope="col">Nome Attività</th>
                     <th scope="col">Codice Unità</th>
                     <th scope="col">Nome Unità</th>
+                    <th scope="col">Azione</th>
                 </tr>
             </tfooter>
         </table>

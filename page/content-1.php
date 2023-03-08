@@ -1,6 +1,14 @@
 <?php
-$url = 'http://localhost/registro/function/api/getArchiveActivity.php';
-$array = json_decode(file_get_contents($url));
+
+include_once dirname(__FILE__) . '/../function/getArchiveActivity.php';
+
+$array = array();
+$response = getArchiveActivity();
+
+while ($record = $response->fetch_assoc()) {
+    $array[] = $record;
+}
+
 ?>
 
 <h3 class="text-center"><?php echo "Attività Formative"; ?></h3>
@@ -11,23 +19,27 @@ $array = json_decode(file_get_contents($url));
                 <tr>
                     <th scope="col">Codice</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">CFU</th>
+                    <th scope="col">Azione</th>
                 </tr>
             </thead>
             <tbody>
-                <?php for ($i = 0; $i < count($array); $i++) : ?>
+                <?php foreach ($array as $row) : ?>
                     <tr>
-                        <td><?php echo $array[$i]->codice; ?></td>
-                        <td><?php echo $array[$i]->nome; ?></td>
-                        <td><?php echo $array[$i]->cfu; ?></td>
+                        <td><?php echo $row["codice"]; ?></td>
+                        <td><?php echo $row["nome"]; ?></td>
+
+                        <?php if ($user[0]->email == "admin") : ?>
+                            <td><a href="http://localhost/registro/function/delete.php?codice=<?php echo $row["codice"]; ?>">Elimina</a></td>
+                        <? endif; ?>
+
                     </tr>
-                <?php endfor; ?>
+                <?php endforeach; ?>
             </tbody>
             <tfooter>
                 <tr>
                     <th scope="col">Codice</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">CFU</th>
+                    <th scope="col">Azione</th>
                 </tr>
             </tfooter>
         </table>
