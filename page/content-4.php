@@ -1,8 +1,24 @@
+<?php
+
+include_once dirname(__FILE__) . '/../function/setUnity.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (!empty($_POST['attività']) && !empty($_POST['unità'])) {
+        $data = [
+            "attività" => $_POST['attività'],
+            "unità" => $_POST['unità'],
+        ];
+        setUnity($data);
+    }
+}
+
+?>
+
 <h3 class="text-center"><?php echo "Collega Unità Didattiche"; ?></h3>
 <div class="row">
     <div class="col-3"></div>
     <div class="col-6 text-center edit-form">
-        <form action="function/api/setUnity.php" method="post">
+        <form method="post">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingInput" placeholder="attività" name="attività">
                 <label for="floatingInput">Codice dell'attività formativa</label>
