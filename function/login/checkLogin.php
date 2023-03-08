@@ -14,5 +14,5 @@ function checkLogin()
         return $user;
     }
 
-    header("Location: http://localhost/registro/page/login.php");
+    header("Location: http://localhost/registro/page/login-page.php");
 }

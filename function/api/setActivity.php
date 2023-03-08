@@ -4,12 +4,12 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
 include_once dirname(__FILE__) . '/../connect.php';
-include_once dirname(__FILE__) . '/../model.php';
+include_once dirname(__FILE__) . '/../medicina.php';
 
 $database = new Database();
 $db = $database->connect();
 
-$unity = new Model($db);
+$unity = new Medicina($db);
 $codice = $_POST["codice"];
 $nome = $_POST["nome"];
 

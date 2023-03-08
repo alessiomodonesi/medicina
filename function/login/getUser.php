@@ -2,7 +2,7 @@
 
 header("Content-type: application/json; charset=UTF-8");
 include_once dirname(__FILE__) . '/../connect.php';
-include_once dirname(__FILE__) . '/../model.php';
+include_once dirname(__FILE__) . '/../user.php';
 
 if (!isset($_GET['id'])) {
     http_response_code(400);
@@ -21,5 +21,5 @@ if (empty($id)) {
 $database = new Database();
 $db = $database->connect();
 
-$user = new Model($db);
+$user = new User($db);
 $user->getUser($id);

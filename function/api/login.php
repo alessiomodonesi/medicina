@@ -2,7 +2,7 @@
 
 header("Content-type: application/json; charset=UTF-8");
 include_once dirname(__FILE__) . '/../connect.php';
-include_once dirname(__FILE__) . '/../model.php';
+include_once dirname(__FILE__) . '/../user.php';
 
 $data = json_decode(file_get_contents("php://input"));
 
@@ -14,7 +14,7 @@ if (empty($data->email) || empty($data->password)) {
 
 $database = new Database();
 $db = $database->connect();
-$user = new Model($db);
+$user = new User($db);
 
 $result = $user->login($data->email, $data->password);
 
