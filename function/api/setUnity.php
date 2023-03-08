@@ -14,5 +14,5 @@ $attività = $_POST["attività"];
 $unità = $_POST["unità"];
 
 $stmt = $unity->setUnity($attività, $unità);
-header("Location: http://localhost/registro");
+header("Location: http://localhost/registro?page=3");
 die();
