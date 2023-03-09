@@ -14,10 +14,10 @@
                 </li>
                 <?php if ($user[0]->ruolo == "Admin") : ?>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?page=2">Aggiungi Piani</a>
+                        <a class="nav-link active" aria-current="page" href="?page=2">Gestione Piani</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?page=4">Collega Unità</a>
+                        <a class="nav-link active" aria-current="page" href="?page=4">Gestione Unità</a>
                     </li>
                 <?php endif; ?>
             </ul>
