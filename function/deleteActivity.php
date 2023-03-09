@@ -6,6 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['codice'])) {
         $db = new Database();
         $conn = $db->connect();
+
         $query = sprintf(
             "SELECT fd.didattica 
             FROM formativa_didattica fd 
