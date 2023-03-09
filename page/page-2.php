@@ -45,7 +45,10 @@ while ($record = $response->fetch_assoc()) {
                 <select name="codice">
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['codice']; ?>">
-                            <?php echo $row['codice']; ?> - <?php echo strtoupper($row['nome']); ?>
+                            <?php echo $row['codice']; ?>
+                            <?php
+                            //echo strtoupper($row['nome']); 
+                            ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
