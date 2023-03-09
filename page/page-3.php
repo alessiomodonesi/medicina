@@ -40,9 +40,11 @@ while ($record = $response->fetch_assoc()) {
 
                         <?php if ($user[0]->ruolo == "Admin") : ?>
                             <td>
-                                <a class="btn btn-outline-dark" href="http://localhost/registro/function/delete.php?codice=<?php echo $row["codice"]; ?>" role="button">
-                                    <img src="http://localhost/registro/css/img/trash.png" alt="trash" width="20" height="20" class="d-inline-block">
-                                </a>
+                                <form action="http://localhost/registro/function/delete.php" method="post">
+                                    <button class="btn btn-outline-dark" name="codice" value="<?php echo $row["codice"]; ?>">
+                                        <img src="http://localhost/registro/css/img/trash.png" alt="trash" width="20" height="20" class="d-inline-block">
+                                    </button>
+                                </form>
                             </td>
                         <? endif; ?>
                     </tr>
