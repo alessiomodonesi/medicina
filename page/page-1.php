@@ -30,7 +30,7 @@ while ($record = $response->fetch_assoc()) {
                 <?php foreach ($array as $row) : ?>
                     <tr>
                         <td style="font-weight: bold;"><?php echo $row["codice"]; ?></td>
-                        <td><?php echo $row["nome"]; ?></td>
+                        <td><?php echo strtoupper($row["nome"]); ?></td>
                         <td><?php echo $row["cfu"]; ?></td>
 
                         <?php if ($user[0]->ruolo == "Admin") : ?>

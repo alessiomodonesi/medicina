@@ -32,10 +32,10 @@ while ($record = $response->fetch_assoc()) {
                 <?php foreach ($array as $row) : ?>
                     <tr>
                         <td style="font-weight: bold;"><?php echo $row["a_codice"]; ?></td>
-                        <td><?php echo $row["a_nome"]; ?></td>
+                        <td><?php echo strtoupper($row["a_nome"]); ?></td>
 
                         <td style="font-weight: bold;"><?php echo $row["u_codice"]; ?></td>
-                        <td><?php echo $row["u_nome"]; ?></td>
+                        <td><?php echo strtoupper($row["u_nome"]); ?></td>
                         <td><?php echo $row["u_cfu"]; ?></td>
 
                         <?php if ($user[0]->ruolo == "Admin") : ?>

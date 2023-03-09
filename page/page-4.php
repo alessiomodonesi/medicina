@@ -40,7 +40,7 @@ while ($record = $response->fetch_assoc()) {
                 <select name="attività">
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['a_codice']; ?>">
-                            <?php echo $row['a_codice']; ?> - <?php echo $row['a_nome']; ?>
+                            <?php echo $row['a_codice']; ?> - <?php echo strtoupper($row['a_nome']); ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
@@ -50,7 +50,7 @@ while ($record = $response->fetch_assoc()) {
                 <select name="unità">
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['u_codice']; ?>">
-                            <?php echo $row['u_codice']; ?> - <?php echo $row['u_nome']; ?>
+                            <?php echo $row['u_codice']; ?> - <?php echo strtoupper($row['u_nome']); ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
