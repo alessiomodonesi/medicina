@@ -30,7 +30,7 @@
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingInput" placeholder="codice" name="unità">
-                <label for="floatingInput">Codice dell'unità didattica</label>
+                <label for="floatingInput">Codice della nuova unità didattica</label>
             </div>
 
             <button type="submit" class="btn btn-outline-dark" disabled>Modifica</button>
