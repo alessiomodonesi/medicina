@@ -18,12 +18,12 @@ while ($record = $response->fetch_assoc()) {
         <form action="http://localhost/registro/function/setUnity.php" method="post">
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="attività" name="attività">
+                <input type="number" class="form-control" id="floatingInput" placeholder="attività" name="attività">
                 <label for="floatingInput">Codice dell'attività formativa</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="codice" name="unità">
+                <input type="number" class="form-control" id="floatingInput" placeholder="codice" name="unità">
                 <label for="floatingInput">Codice dell'unità didattica</label>
             </div>
 

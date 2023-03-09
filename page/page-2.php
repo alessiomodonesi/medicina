@@ -18,13 +18,18 @@ while ($record = $response->fetch_assoc()) {
         <form action="http://localhost/registro/function/setActivity.php" method="post">
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="codice" name="codice">
+                <input type="number" class="form-control" id="floatingInput" placeholder="codice" name="codice">
                 <label for="floatingInput">Codice del piano di studio</label>
             </div>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingInput" placeholder="nome" name="nome">
                 <label for="floatingInput">Nome del piano di studio</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput" placeholder="codice" name="cfu">
+                <label for="floatingInput">CFU del piano di studio</label>
             </div>
 
             <button type="submit" class="btn btn-outline-dark">Aggiungi</button>
@@ -40,7 +45,7 @@ while ($record = $response->fetch_assoc()) {
                 <select name="codice">
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['codice']; ?>">
-                            <?php echo $row['codice']; ?> - <?php echo $row['nome']; ?>
+                            <?php echo $row['codice']; ?> - <?php echo strtoupper($row['nome']); ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
@@ -48,7 +53,7 @@ while ($record = $response->fetch_assoc()) {
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingInput" placeholder="nome" name="nome">
-                <label for="floatingInput">Nuovo nome del piano di studio</label>
+                <label for="floatingInput">Nome del piano di studio</label>
             </div>
 
             <button type="submit" class="btn btn-outline-dark">Modifica</button>
