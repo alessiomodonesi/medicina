@@ -36,6 +36,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         );
 
         $conn->query($query);
-        header("Location: http://localhost/registro?page=3");
     }
 }
+header("Location: http://localhost/registro?page=3");

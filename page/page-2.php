@@ -55,12 +55,12 @@ while ($record = $response->fetch_assoc()) {
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="nome" name="nome">
-                <label for="floatingInput">Nome del piano di studio</label>
+                <input type="text" class="form-control" id="floatingInput" placeholder="nome" name="nome" value="<?php echo $row['nome']; ?>">
+                <label for=" floatingInput">Nome del piano di studio</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="floatingInput" placeholder="nome" name="cfu">
+                <input type="number" class="form-control" id="floatingInput" placeholder="nome" name="cfu" value="<?php echo $row['cfu']; ?>">
                 <label for="floatingInput">CFU del piano di studio</label>
             </div>
 
