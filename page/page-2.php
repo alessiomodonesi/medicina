@@ -15,7 +15,7 @@ while ($record = $response->fetch_assoc()) {
 <div class="row justify-content-center">
     <div class="col-4 text-center">
         <br />
-        <h3 class="title text-center"><?php echo "Aggiungi Piani di Studio"; ?></h3>
+        <h3 class="title text-center"><?php echo "Aggiungi Piano di Studio"; ?></h3>
         <br />
         <form action="http://localhost/registro/function/setActivity.php" method="post">
 
@@ -40,11 +40,11 @@ while ($record = $response->fetch_assoc()) {
     <div class="col-1"></div>
     <div class="col-4 text-center">
         <br />
-        <h3 class="title text-center"><?php echo "Modifica Piani di Studio"; ?></h3>
+        <h3 class="title text-center"><?php echo "Modifica Piano di Studio"; ?></h3>
         <br />
         <form action="http://localhost/registro/function/updateActivity.php" method="post">
             <div class="form mb-3">
-                <label>Codice attività</label>
+                <label>Codice del piano di studio</label>
                 <select class="text-center update-form" name="codice" style="width: 30vw;">
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['codice']; ?>">
