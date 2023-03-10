@@ -1,6 +1,6 @@
 <?php
 
-require 'connect.php';
+require("connect.php");
 
 $db = new Database();
 $conn = $db->connect();

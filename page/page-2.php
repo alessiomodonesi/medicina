@@ -55,12 +55,12 @@ while ($record = $response->fetch_assoc()) {
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="nome" name="nome" value="<?php echo $row['nome']; ?>">
+                <input type="text" class="form-control" placeholder="nome" name="nome" id="InputNome">
                 <label for=" floatingInput">Nome del piano di studio</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="floatingInput" placeholder="nome" name="cfu" value="<?php echo $row['cfu']; ?>">
+                <input type="number" class="form-control" placeholder="nome" name="cfu" id="InputCFU">
                 <label for="floatingInput">CFU del piano di studio</label>
             </div>
 
@@ -68,3 +68,5 @@ while ($record = $response->fetch_assoc()) {
         </form>
     </div>
 </div>
+
+<script type="text/javascript" src="http://localhost/registro/function/js/getActivity.js"></script>
