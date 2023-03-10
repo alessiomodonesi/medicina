@@ -10,6 +10,7 @@ function getArchiveUnity()
     $query = "SELECT 
                 p1.codice AS 'a_codice',
                 p1.nome AS 'a_nome',
+                p1.cfu AS 'a_cfu',
                 p2.codice AS 'u_codice',
                 p2.nome AS 'u_nome',
                 p2.cfu AS 'u_cfu'

@@ -19,6 +19,7 @@ while ($record = $response->fetch_assoc()) {
                 <tr>
                     <th scope="col">Codice</th>
                     <th scope="col">Attività</th>
+                    <th scope="col">CFU</th>
                     <th scope="col">Codice</th>
                     <th scope="col">Unità</th>
                     <th scope="col">CFU</th>
@@ -33,6 +34,7 @@ while ($record = $response->fetch_assoc()) {
                     <tr>
                         <td style="font-weight: bold;"><?php echo $row["a_codice"]; ?></td>
                         <td><?php echo strtoupper($row["a_nome"]); ?></td>
+                        <td><?php echo $row["a_cfu"]; ?></td>
 
                         <td style="font-weight: bold;"><?php echo $row["u_codice"]; ?></td>
                         <td><?php echo strtoupper($row["u_nome"]); ?></td>
@@ -54,6 +56,7 @@ while ($record = $response->fetch_assoc()) {
                 <tr>
                     <th scope="col">Codice</th>
                     <th scope="col">Attività</th>
+                    <th scope="col">CFU</th>
                     <th scope="col">Codice</th>
                     <th scope="col">Unità</th>
                     <th scope="col">CFU</th>

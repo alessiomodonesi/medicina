@@ -20,6 +20,8 @@ while ($record = $response->fetch_assoc()) {
                     <th scope="col">Codice</th>
                     <th scope="col">Nome</th>
                     <th scope="col">CFU</th>
+                    <th scope="col">Settore</th>
+                    <th scope="col">Insegnamento</th>
 
                     <?php if ($user[0]->ruolo == "Admin") : ?>
                         <th scope="col">Elimina</th>
@@ -32,6 +34,8 @@ while ($record = $response->fetch_assoc()) {
                         <td style="font-weight: bold;"><?php echo $row["codice"]; ?></td>
                         <td><?php echo strtoupper($row["nome"]); ?></td>
                         <td><?php echo $row["cfu"]; ?></td>
+                        <td><?php echo $row["settore"] . ' ' . $row["n_settore"]; ?></td>
+                        <td><?php echo $row["tipo_insegnamento"]; ?></td>
 
                         <?php if ($user[0]->ruolo == "Admin") : ?>
                             <td>
@@ -50,6 +54,8 @@ while ($record = $response->fetch_assoc()) {
                     <th scope="col">Codice</th>
                     <th scope="col">Nome</th>
                     <th scope="col">CFU</th>
+                    <th scope="col">Settore</th>
+                    <th scope="col">Insegnamento</th>
 
                     <?php if ($user[0]->ruolo == "Admin") : ?>
                         <th scope="col">Elimina</th>
