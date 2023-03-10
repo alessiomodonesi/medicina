@@ -11,10 +11,11 @@ while ($record = $response->fetch_assoc()) {
 
 ?>
 
-<h3 class="title text-center"><?php echo "Gestione Unità"; ?></h3>
-<br />
 <div class="row justify-content-center">
-    <div class="col-5 text-center">
+    <div class="col-4 text-center">
+        <br />
+        <h3 class="title text-center"><?php echo "Collega Unità"; ?></h3>
+        <br />
         <form action="http://localhost/registro/function/setUnity.php" method="post">
 
             <div class="form-floating mb-3">
@@ -30,12 +31,15 @@ while ($record = $response->fetch_assoc()) {
             <button type="submit" class="btn btn-outline-dark">Collega</button>
         </form>
     </div>
-
-    <div class="col-5 text-center">
+    <div class="col-1"></div>
+    <div class="col-4 text-center">
+        <br />
+        <h3 class="title text-center"><?php echo "Modifica Unità"; ?></h3>
+        <br />
         <form action="http://localhost/registro/function/updateUnity.php" method="post">
-            <br />
             <div class="form mb-3">
-                <select class="text-center" name="attività">
+                <label>Codice attività</label>
+                <select class="text-center update-form" name="attività">
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['a_codice']; ?>">
                             <?php echo strtoupper($row['a_nome']); ?>
@@ -45,7 +49,8 @@ while ($record = $response->fetch_assoc()) {
             </div>
 
             <div class="form mb-3">
-                <select class="text-center" name="unità">
+                <label>Codice unità</label>
+                <select class="text-center update-form" name="unità">
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['u_codice']; ?>">
                             <?php echo strtoupper($row['u_nome']); ?>
