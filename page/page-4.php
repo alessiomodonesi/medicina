@@ -40,7 +40,7 @@ while ($record = $response->fetch_assoc()) {
             <div class="form mb-3">
 
                 <select class="form-select unity-form" name="attività">
-                    <option selected>Codice dell'attività formativa</option>
+                    <option disabled selected>Seleziona un'attività</option>
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['a_codice']; ?>">
                             <?php echo strtoupper($row['a_nome']); ?>
@@ -49,7 +49,7 @@ while ($record = $response->fetch_assoc()) {
                 </select>
 
                 <select class="form-select unity-form" name="unità">
-                    <option selected>Codice dell'unità didattica</option>
+                    <option disabled selected>Seleziona un'unità</option>
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['u_codice']; ?>">
                             <?php echo strtoupper($row['u_nome']); ?>
