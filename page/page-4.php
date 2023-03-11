@@ -38,28 +38,26 @@ while ($record = $response->fetch_assoc()) {
         <br />
         <form action="http://localhost/registro/function/updateUnity.php" method="post">
             <div class="form mb-3">
-                <label>Codice attività</label>
-                <select class="text-center update-form" name="attività">
+
+                <select class="form-select unity-form" name="attività">
+                    <option selected>Codice dell'attività formativa</option>
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['a_codice']; ?>">
                             <?php echo strtoupper($row['a_nome']); ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
-            </div>
 
-            <div class="form mb-3">
-                <label>Codice unità</label>
-                <select class="text-center update-form" name="unità">
+                <select class="form-select unity-form" name="unità">
+                    <option selected>Codice dell'unità didattica</option>
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['u_codice']; ?>">
                             <?php echo strtoupper($row['u_nome']); ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
-            </div>
 
-            <button type="submit" class="btn btn-outline-dark">Modifica</button>
+                <button type="submit" class="btn btn-outline-dark mod-btn">Modifica</button>
         </form>
     </div>
 </div>

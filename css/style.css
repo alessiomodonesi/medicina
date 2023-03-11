@@ -42,5 +42,13 @@ body {
 }
 
 .update-form {
-    width: 30vw;
+    margin-top: 1.2vh;
+}
+
+.unity-form {
+    margin-top: 2vh;
+}
+
+.mod-btn {
+    margin-top: 2.2vh;
 }

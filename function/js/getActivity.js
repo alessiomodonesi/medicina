@@ -15,13 +15,13 @@ $(document).ready(function () {
     }
 
     getActivity().done(function (data) {
-        $("#InputNome").val(data[0]['nome']);
+        $("#InputNome").val(data[0]['nome'].toUpperCase());
         $("#InputCFU").val(data[0]['cfu']);
     });
 
     $("select").change(function () {
         getActivity().done(function (data) {
-            $("#InputNome").val(data[0]['nome']);
+            $("#InputNome").val(data[0]['nome'].toUpperCase());
             $("#InputCFU").val(data[0]['cfu']);
         });
     });

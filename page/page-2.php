@@ -44,8 +44,8 @@ while ($record = $response->fetch_assoc()) {
         <br />
         <form action="http://localhost/registro/function/updateActivity.php" method="post">
             <div class="form mb-3">
-                <label>Codice del piano di studio</label>
-                <select class="text-center update-form" name="codice" style="width: 30vw;">
+                <select class="form-select update-form" name="codice">
+                    <option selected>Codice del piano di studio</option>
                     <?php foreach ($array as $row) : ?>
                         <option value="<?php echo $row['codice']; ?>">
                             <?php echo $row['codice']; ?>
